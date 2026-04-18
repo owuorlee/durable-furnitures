@@ -1,6 +1,9 @@
-import HeroSection from "@/components/HeroSection";
-import BrandStatement from "@/components/BrandStatement";
-import CategoryGrid from "@/components/CategoryGrid";
+import UtilityBar from "@/components/UtilityBar";
+import MainHeader from "@/components/MainHeader";
+import CategoryNav from "@/components/CategoryNav";
+import PromoHero from "@/components/PromoHero";
+import PopularCategories from "@/components/PopularCategories";
+import FeaturedProducts from "@/components/FeaturedProducts";
 import ValueProps from "@/components/ValueProps";
 import FeaturedProduct from "@/components/FeaturedProduct";
 import Testimonials from "@/components/Testimonials";
@@ -10,10 +13,13 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main>
-      <HeroSection />
-      <BrandStatement />
-      <CategoryGrid />
+    <main className="min-h-screen">
+      <UtilityBar />
+      <MainHeader />
+      <CategoryNav />
+      <PromoHero />
+      <PopularCategories />
+      <FeaturedProducts />
       <ValueProps />
       <FeaturedProduct />
       <Testimonials />
