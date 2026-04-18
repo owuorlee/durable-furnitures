@@ -126,8 +126,8 @@ const ProductCard = ({ product }: { product: Product }) => {
         <StarRating rating={product.rating} />
 
         <div className="mt-2 flex items-center gap-1.5 text-xs">
-          <Check className="h-3.5 w-3.5 text-green-600" strokeWidth={2.5} />
-          <span className="font-body text-green-700">In stock</span>
+          <Check className="h-3.5 w-3.5 text-gold" strokeWidth={2.5} />
+          <span className="font-body text-foreground/70">In stock</span>
         </div>
 
         <div className="mt-3 flex flex-wrap items-baseline gap-2">
