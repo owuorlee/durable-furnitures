@@ -120,7 +120,7 @@ export const products: Product[] = [
   make("10", "6-Seater Black Mahogany Set", img10, "dining-sets", 74000, 68000, 5, ["featured"]),
   make("11", "Sovereign Tufted Chester Bed", img9, "chester-beds", 320000, 285000, 5, ["top"], true),
   make("12", "Heritage Mahogany Coffee Table", img7, "coffee-tables", 48000, 42000, 5, ["top", "featured"]),
-  make("13", "Royal L-Shaped Velvet Sofa", img1, "l-shaped-sofas", 145000, 128000, 4.5, ["top"]),
+  make("13", "Royal L-Shaped Velvet Sofa", img1, "l-shaped-sofas", 49500, 45000, 4.5, ["top"]),
   make("14", "Atelier Wooden King Bed", img5, "wooden-beds", 88000, 76000, 5, ["top", "new"]),
   make("15", "Manor 8-Seater Dining Suite", img6, "dining-sets", 195000, 168000, 4.5, ["top"], true),
   make("16", "Verona Floating TV Console", img8, "tv-stands", 52000, 46000, 4, ["new"]),
