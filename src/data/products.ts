@@ -15,6 +15,13 @@ import lsBlue from "@/assets/lshape-blue-textured.jpg";
 import lsLightGrey from "@/assets/lshape-light-grey-chaise.jpg";
 import lsTaupe from "@/assets/lshape-taupe-tufted.jpg";
 import lsCharcoal from "@/assets/lshape-charcoal-tufted.jpg";
+import lsBeige from "@/assets/lshape-beige-textured.png";
+import lsDeepBlue from "@/assets/lshape-deep-blue-indoor.png";
+import lsLightGreyAngled from "@/assets/lshape-light-grey-angled.png";
+import lsPowderBlue from "@/assets/lshape-powder-blue-textured.png";
+import lsSkyBlue from "@/assets/lshape-sky-blue-garden.png";
+import lsSoftGrey from "@/assets/lshape-soft-grey-showroom.png";
+import lsSteelBlue from "@/assets/lshape-steel-blue-tufted.png";
 
 export type Product = {
   id: string;
@@ -101,19 +108,19 @@ const make = (
 });
 
 export const products: Product[] = [
-  make("1", "Classic Grey 3-Seater Sofa", img1, "l-shaped-sofas", 36000, 32000, 5, ["new", "featured"]),
+  make("1", "Classic Grey 3-Seater Sofa", img1, "l-shaped-sofas", 48500, 44000, 5, ["new", "featured"]),
   make("2", "Helsinki 7-Seater Dark Grey", img2, "sofa-set-designs", 68000, 62000, 5, ["new", "top"]),
   make("3", "6×6 White Bed With Storage Drawers", img3, "chester-beds", 58000, 56000, 4.5, ["new"]),
-  make("4", "6-Seater Brown L-Shaped", img4, "l-shaped-sofas", 64000, 58000, 4, ["new", "featured"], true),
+  make("4", "6-Seater Brown L-Shaped", img4, "l-shaped-sofas", 49000, 44500, 4, ["new", "featured"], true),
   make("5", "Austin 3-Seater Classic Sofa", img5, "sofa-set-designs", 34000, 32000, 4.5, ["new"]),
   make("6", "Snow White Sofa Bed", img6, "chester-seats", 28000, 26000, 4, ["featured"]),
   make("7", "6-Seater Black Dining Table Set", img7, "dining-sets", 74000, 68000, 4.5, ["featured", "top"]),
-  make("8", "Alexandria 6-Seater Grey L", img8, "l-shaped-sofas", 60000, 56000, 4, ["featured"], true),
+  make("8", "Alexandria 6-Seater Grey L", img8, "l-shaped-sofas", 47300, 43000, 4, ["featured"], true),
   make("9", "Canterbury 5×6 Chester Bed", img9, "chester-beds", 42000, 36000, 4.5, ["featured", "top"]),
   make("10", "6-Seater Black Mahogany Set", img10, "dining-sets", 74000, 68000, 5, ["featured"]),
   make("11", "Sovereign Tufted Chester Bed", img9, "chester-beds", 320000, 285000, 5, ["top"], true),
   make("12", "Heritage Mahogany Coffee Table", img7, "coffee-tables", 48000, 42000, 5, ["top", "featured"]),
-  make("13", "Royal L-Shaped Velvet Sofa", img1, "l-shaped-sofas", 145000, 128000, 4.5, ["top"]),
+  make("13", "Royal L-Shaped Velvet Sofa", img1, "l-shaped-sofas", 49500, 45000, 4.5, ["top"]),
   make("14", "Atelier Wooden King Bed", img5, "wooden-beds", 88000, 76000, 5, ["top", "new"]),
   make("15", "Manor 8-Seater Dining Suite", img6, "dining-sets", 195000, 168000, 4.5, ["top"], true),
   make("16", "Verona Floating TV Console", img8, "tv-stands", 52000, 46000, 4, ["new"]),
@@ -134,20 +141,34 @@ const lshapeSpecs = (size: string, color: string) => [
 ];
 
 const lshapeProducts: Product[] = [
-  { ...make("ls-1", "6 Seater Tan Velvet L-Shaped Sofa", lsTan, "l-shaped-sofas", 51000, 47500, 4.5, ["new", "featured"]),
+  { ...make("ls-1", "6 Seater Tan Velvet L-Shaped Sofa", lsTan, "l-shaped-sofas", 48400, 44000, 4.5, ["new", "featured"]),
     attributes: lshapeSpecs("L-shape, seats 6", "Tan / Caramel"), colors: ["#A0522D", "#C9A96E", "#4A2C2A"] },
-  { ...make("ls-2", "7 Seater Olive Green Channel-Tufted L-Shaped Sofa", lsOlive, "l-shaped-sofas", 98000, 89000, 5, ["new", "top"], true),
+  { ...make("ls-2", "7 Seater Olive Green Channel-Tufted L-Shaped Sofa", lsOlive, "l-shaped-sofas", 49500, 45000, 5, ["new", "top"], true),
     attributes: lshapeSpecs("L-shape, seats 7", "Olive Green"), colors: ["#556B2F", "#1A1A1A", "#B8A99A"] },
-  { ...make("ls-3", "7 Seater Cream Corduroy L-Shaped Sofa", lsCream, "l-shaped-sofas", 79000, 72000, 4.5, ["new", "featured"]),
+  { ...make("ls-3", "7 Seater Cream Corduroy L-Shaped Sofa", lsCream, "l-shaped-sofas", 47800, 43500, 4.5, ["new", "featured"]),
     attributes: lshapeSpecs("L-shape, seats 7", "Cream / Ivory"), colors: ["#F5F0E6", "#B8A99A", "#1A1A1A"] },
-  { ...make("ls-4", "6 Seater Steel Blue Textured L-Shaped Sofa", lsBlue, "l-shaped-sofas", 65000, 58500, 4, ["featured"]),
+  { ...make("ls-4", "6 Seater Steel Blue Textured L-Shaped Sofa", lsBlue, "l-shaped-sofas", 48600, 44500, 4, ["featured"]),
     attributes: lshapeSpecs("L-shape, seats 6–7", "Steel Blue"), colors: ["#4682B4", "#C9A96E", "#1A1A1A"] },
-  { ...make("ls-5", "6 Seater Light Grey L-Shaped Sofa with Chaise", lsLightGrey, "l-shaped-sofas", 71000, 64000, 4.5, ["new"]),
+  { ...make("ls-5", "6 Seater Light Grey L-Shaped Sofa with Chaise", lsLightGrey, "l-shaped-sofas", 48000, 44000, 4.5, ["new"]),
     attributes: lshapeSpecs("L-shape with chaise, seats 6", "Light Grey"), colors: ["#D3D3D3", "#1A1A1A", "#B8A99A"] },
-  { ...make("ls-6", "8 Seater Taupe Tufted L-Shaped Sofa", lsTaupe, "l-shaped-sofas", 120000, 109000, 5, ["top", "featured"], true),
+  { ...make("ls-6", "8 Seater Taupe Tufted L-Shaped Sofa", lsTaupe, "l-shaped-sofas", 49500, 45000, 5, ["top", "featured"], true),
     attributes: lshapeSpecs("L-shape, seats 7–8", "Taupe / Warm Beige"), colors: ["#B8A99A", "#4A2C2A", "#1A1A1A"] },
-  { ...make("ls-7", "6 Seater Charcoal Grey Tufted L-Shaped Sofa", lsCharcoal, "l-shaped-sofas", 58000, 53000, 4.5, ["featured"]),
+  { ...make("ls-7", "6 Seater Charcoal Grey Tufted L-Shaped Sofa", lsCharcoal, "l-shaped-sofas", 47300, 43000, 4.5, ["featured"]),
     attributes: lshapeSpecs("L-shape, seats 6", "Charcoal Grey"), colors: ["#36454F", "#C9A96E", "#1A1A1A"] },
+  { ...make("ls-8", "6 Seater Beige Textured L-Shaped Sofa", lsBeige, "l-shaped-sofas", 47800, 43500, 4.5, ["new"]),
+    attributes: lshapeSpecs("L-shape, seats 6", "Beige"), colors: ["#D9C9B0", "#4A2C2A", "#1A1A1A"] },
+  { ...make("ls-9", "7 Seater Deep Blue Indoor L-Shaped Sofa", lsDeepBlue, "l-shaped-sofas", 49500, 45000, 5, ["featured", "top"]),
+    attributes: lshapeSpecs("L-shape, seats 7", "Deep Navy Blue"), colors: ["#1B2A49", "#C9A96E", "#1A1A1A"] },
+  { ...make("ls-10", "6 Seater Light Grey Angled L-Shaped Sofa", lsLightGreyAngled, "l-shaped-sofas", 48400, 44000, 4, ["new"]),
+    attributes: lshapeSpecs("L-shape, seats 6", "Light Grey"), colors: ["#CFCFCF", "#1A1A1A", "#B8A99A"] },
+  { ...make("ls-11", "6 Seater Powder Blue Textured L-Shaped Sofa", lsPowderBlue, "l-shaped-sofas", 48000, 43500, 4.5, ["new", "featured"]),
+    attributes: lshapeSpecs("L-shape, seats 6", "Powder Blue"), colors: ["#B0CDE4", "#C9A96E", "#1A1A1A"] },
+  { ...make("ls-12", "7 Seater Sky Blue Garden L-Shaped Sofa", lsSkyBlue, "l-shaped-sofas", 49000, 44500, 4.5, ["featured"], true),
+    attributes: lshapeSpecs("L-shape, seats 7", "Sky Blue"), colors: ["#87CEEB", "#1A1A1A", "#B8A99A"] },
+  { ...make("ls-13", "6 Seater Soft Grey Showroom L-Shaped Sofa", lsSoftGrey, "l-shaped-sofas", 47300, 43000, 4, ["new"]),
+    attributes: lshapeSpecs("L-shape, seats 6", "Soft Grey"), colors: ["#BFBFBF", "#4A2C2A", "#1A1A1A"] },
+  { ...make("ls-14", "8 Seater Steel Blue Tufted L-Shaped Sofa", lsSteelBlue, "l-shaped-sofas", 49500, 45000, 5, ["top", "featured"], true),
+    attributes: lshapeSpecs("L-shape, seats 7–8", "Steel Blue"), colors: ["#4A6B82", "#C9A96E", "#1A1A1A"] },
 ];
 
 products.push(...lshapeProducts);
