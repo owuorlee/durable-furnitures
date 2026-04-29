@@ -123,6 +123,35 @@ export const products: Product[] = [
   make("20", "Bristol Walnut TV Stand", img8, "tv-stands", 58000, 49000, 4, ["top"]),
 ];
 
+// L-Shaped Sofa client photos — descriptions reflect color & style of each piece.
+const lshapeSpecs = (size: string, color: string) => [
+  { label: "Material", value: "High-density foam, fabric upholstery" },
+  { label: "Size", value: size },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Kiln-dried hardwood frame" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const lshapeProducts: Product[] = [
+  { ...make("ls-1", "6 Seater Tan Velvet L-Shaped Sofa", lsTan, "l-shaped-sofas", 51000, 47500, 4.5, ["new", "featured"]),
+    attributes: lshapeSpecs("L-shape, seats 6", "Tan / Caramel"), colors: ["#A0522D", "#C9A96E", "#4A2C2A"] },
+  { ...make("ls-2", "7 Seater Olive Green Channel-Tufted L-Shaped Sofa", lsOlive, "l-shaped-sofas", 98000, 89000, 5, ["new", "top"], true),
+    attributes: lshapeSpecs("L-shape, seats 7", "Olive Green"), colors: ["#556B2F", "#1A1A1A", "#B8A99A"] },
+  { ...make("ls-3", "7 Seater Cream Corduroy L-Shaped Sofa", lsCream, "l-shaped-sofas", 79000, 72000, 4.5, ["new", "featured"]),
+    attributes: lshapeSpecs("L-shape, seats 7", "Cream / Ivory"), colors: ["#F5F0E6", "#B8A99A", "#1A1A1A"] },
+  { ...make("ls-4", "6 Seater Steel Blue Textured L-Shaped Sofa", lsBlue, "l-shaped-sofas", 65000, 58500, 4, ["featured"]),
+    attributes: lshapeSpecs("L-shape, seats 6–7", "Steel Blue"), colors: ["#4682B4", "#C9A96E", "#1A1A1A"] },
+  { ...make("ls-5", "6 Seater Light Grey L-Shaped Sofa with Chaise", lsLightGrey, "l-shaped-sofas", 71000, 64000, 4.5, ["new"]),
+    attributes: lshapeSpecs("L-shape with chaise, seats 6", "Light Grey"), colors: ["#D3D3D3", "#1A1A1A", "#B8A99A"] },
+  { ...make("ls-6", "8 Seater Taupe Tufted L-Shaped Sofa", lsTaupe, "l-shaped-sofas", 120000, 109000, 5, ["top", "featured"], true),
+    attributes: lshapeSpecs("L-shape, seats 7–8", "Taupe / Warm Beige"), colors: ["#B8A99A", "#4A2C2A", "#1A1A1A"] },
+  { ...make("ls-7", "6 Seater Charcoal Grey Tufted L-Shaped Sofa", lsCharcoal, "l-shaped-sofas", 58000, 53000, 4.5, ["featured"]),
+    attributes: lshapeSpecs("L-shape, seats 6", "Charcoal Grey"), colors: ["#36454F", "#C9A96E", "#1A1A1A"] },
+];
+
+products.push(...lshapeProducts);
+
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
 
