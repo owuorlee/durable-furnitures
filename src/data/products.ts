@@ -115,7 +115,7 @@ export const products: Product[] = [
   make("5", "Austin 3-Seater Classic Sofa", img5, "sofa-set-designs", 34000, 32000, 4.5, ["new"]),
   make("6", "Snow White Sofa Bed", img6, "chester-seats", 28000, 26000, 4, ["featured"]),
   make("7", "6-Seater Black Dining Table Set", img7, "dining-sets", 74000, 68000, 4.5, ["featured", "top"]),
-  make("8", "Alexandria 6-Seater Grey L", img8, "l-shaped-sofas", 60000, 56000, 4, ["featured"], true),
+  make("8", "Alexandria 6-Seater Grey L", img8, "l-shaped-sofas", 47300, 43000, 4, ["featured"], true),
   make("9", "Canterbury 5×6 Chester Bed", img9, "chester-beds", 42000, 36000, 4.5, ["featured", "top"]),
   make("10", "6-Seater Black Mahogany Set", img10, "dining-sets", 74000, 68000, 5, ["featured"]),
   make("11", "Sovereign Tufted Chester Bed", img9, "chester-beds", 320000, 285000, 5, ["top"], true),
