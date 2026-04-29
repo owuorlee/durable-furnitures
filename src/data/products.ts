@@ -111,7 +111,7 @@ export const products: Product[] = [
   make("1", "Classic Grey 3-Seater Sofa", img1, "l-shaped-sofas", 48500, 44000, 5, ["new", "featured"]),
   make("2", "Helsinki 7-Seater Dark Grey", img2, "sofa-set-designs", 68000, 62000, 5, ["new", "top"]),
   make("3", "6×6 White Bed With Storage Drawers", img3, "chester-beds", 58000, 56000, 4.5, ["new"]),
-  make("4", "6-Seater Brown L-Shaped", img4, "l-shaped-sofas", 64000, 58000, 4, ["new", "featured"], true),
+  make("4", "6-Seater Brown L-Shaped", img4, "l-shaped-sofas", 49000, 44500, 4, ["new", "featured"], true),
   make("5", "Austin 3-Seater Classic Sofa", img5, "sofa-set-designs", 34000, 32000, 4.5, ["new"]),
   make("6", "Snow White Sofa Bed", img6, "chester-seats", 28000, 26000, 4, ["featured"]),
   make("7", "6-Seater Black Dining Table Set", img7, "dining-sets", 74000, 68000, 4.5, ["featured", "top"]),
