@@ -15,6 +15,13 @@ import lsBlue from "@/assets/lshape-blue-textured.jpg";
 import lsLightGrey from "@/assets/lshape-light-grey-chaise.jpg";
 import lsTaupe from "@/assets/lshape-taupe-tufted.jpg";
 import lsCharcoal from "@/assets/lshape-charcoal-tufted.jpg";
+import lsBeige from "@/assets/lshape-beige-textured.png";
+import lsDeepBlue from "@/assets/lshape-deep-blue-indoor.png";
+import lsLightGreyAngled from "@/assets/lshape-light-grey-angled.png";
+import lsPowderBlue from "@/assets/lshape-powder-blue-textured.png";
+import lsSkyBlue from "@/assets/lshape-sky-blue-garden.png";
+import lsSoftGrey from "@/assets/lshape-soft-grey-showroom.png";
+import lsSteelBlue from "@/assets/lshape-steel-blue-tufted.png";
 
 export type Product = {
   id: string;
