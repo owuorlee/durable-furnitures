@@ -8,6 +8,13 @@ import img7 from "@/assets/cat-coffee-table.jpg";
 import img8 from "@/assets/cat-tv-stand.jpg";
 import img9 from "@/assets/featured-chester-bed.jpg";
 import img10 from "@/assets/hero-living-room.jpg";
+import lsTan from "@/assets/lshape-tan-velvet.jpg";
+import lsOlive from "@/assets/lshape-olive-channel.jpg";
+import lsCream from "@/assets/lshape-cream-corduroy.jpg";
+import lsBlue from "@/assets/lshape-blue-textured.jpg";
+import lsLightGrey from "@/assets/lshape-light-grey-chaise.jpg";
+import lsTaupe from "@/assets/lshape-taupe-tufted.jpg";
+import lsCharcoal from "@/assets/lshape-charcoal-tufted.jpg";
 
 export type Product = {
   id: string;
