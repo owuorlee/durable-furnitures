@@ -22,6 +22,12 @@ import lsPowderBlue from "@/assets/lshape-powder-blue-textured.png";
 import lsSkyBlue from "@/assets/lshape-sky-blue-garden.png";
 import lsSoftGrey from "@/assets/lshape-soft-grey-showroom.png";
 import lsSteelBlue from "@/assets/lshape-steel-blue-tufted.png";
+import lsWarmGreyChaise from "@/assets/lshape-warm-grey-chaise.png";
+import lsIvoryChenille from "@/assets/lshape-ivory-chenille.png";
+import lsStoneCorduroy from "@/assets/lshape-stone-corduroy-modular.png";
+import lsOatTweed from "@/assets/lshape-oat-tweed-deep.png";
+import lsPearlPopcorn from "@/assets/lshape-pearl-popcorn-chaise.png";
+import lsMochaTufted from "@/assets/lshape-mocha-tufted-cup.png";
 
 export type Product = {
   id: string;
