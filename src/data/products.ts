@@ -175,6 +175,18 @@ const lshapeProducts: Product[] = [
     attributes: lshapeSpecs("L-shape, seats 6", "Soft Grey"), colors: ["#BFBFBF", "#4A2C2A", "#1A1A1A"] },
   { ...make("ls-14", "8 Seater Steel Blue Tufted L-Shaped Sofa", lsSteelBlue, "l-shaped-sofas", 49500, 45000, 5, ["top", "featured"], true),
     attributes: lshapeSpecs("L-shape, seats 7–8", "Steel Blue"), colors: ["#4A6B82", "#C9A96E", "#1A1A1A"] },
+  { ...make("ls-15", "6 Seater Warm Grey L-Shaped Sofa with Chaise & Ottoman", lsWarmGreyChaise, "l-shaped-sofas", 48400, 44000, 4.5, ["new", "featured"]),
+    attributes: lshapeSpecs("L-shape with chaise & ottoman, seats 6", "Warm Grey"), colors: ["#9E9387", "#1A1A1A", "#B8A99A"] },
+  { ...make("ls-16", "7 Seater Ivory Chenille L-Shaped Sofa", lsIvoryChenille, "l-shaped-sofas", 49500, 45000, 5, ["new", "top"], true),
+    attributes: lshapeSpecs("L-shape, seats 7", "Ivory / Champagne"), colors: ["#F0E6D2", "#1A1A1A", "#C9A96E"] },
+  { ...make("ls-17", "8 Seater Stone Corduroy Modular L-Shaped Sofa", lsStoneCorduroy, "l-shaped-sofas", 49000, 44500, 4.5, ["featured"]),
+    attributes: lshapeSpecs("L-shape modular, seats 7–8", "Stone Beige"), colors: ["#C8B89A", "#4A2C2A", "#1A1A1A"] },
+  { ...make("ls-18", "7 Seater Oat Tweed Deep-Seat L-Shaped Sofa", lsOatTweed, "l-shaped-sofas", 47800, 43500, 4.5, ["new"]),
+    attributes: lshapeSpecs("L-shape deep-seat, seats 7", "Oat Beige"), colors: ["#BFAE93", "#1A1A1A", "#B8A99A"] },
+  { ...make("ls-19", "6 Seater Pearl Popcorn L-Shaped Sofa with Chaise", lsPearlPopcorn, "l-shaped-sofas", 47300, 43000, 4, ["featured"]),
+    attributes: lshapeSpecs("L-shape with chaise, seats 6", "Pearl White"), colors: ["#E8E2D5", "#4A2C2A", "#1A1A1A"] },
+  { ...make("ls-20", "7 Seater Mocha Tufted L-Shaped Sofa with Cup Holder", lsMochaTufted, "l-shaped-sofas", 49500, 45000, 5, ["top", "featured"], true),
+    attributes: lshapeSpecs("L-shape, seats 7", "Mocha / Warm Taupe"), colors: ["#9C8470", "#1A1A1A", "#C9A96E"] },
 ];
 
 products.push(...lshapeProducts);
