@@ -28,6 +28,13 @@ import lsStoneCorduroy from "@/assets/lshape-stone-corduroy-modular.png";
 import lsOatTweed from "@/assets/lshape-oat-tweed-deep.png";
 import lsPearlPopcorn from "@/assets/lshape-pearl-popcorn-chaise.png";
 import lsMochaTufted from "@/assets/lshape-mocha-tufted-cup.png";
+import ssBlushRolled from "@/assets/sofaset-blush-rolled-3seater.png";
+import ssCharcoalStudded from "@/assets/sofaset-charcoal-studded-3piece.png";
+import ssGreyTuftedMustard from "@/assets/sofaset-grey-tufted-mustard.png";
+import ssPebbleGrey from "@/assets/sofaset-pebble-grey-3piece.png";
+import ssIvoryRolled from "@/assets/sofaset-ivory-rolled-arm.png";
+import ssPowderBluePopcorn from "@/assets/sofaset-powder-blue-popcorn.png";
+import ssDenimBlueModular from "@/assets/sofaset-denim-blue-modular.png";
 
 export type Product = {
   id: string;
@@ -190,6 +197,38 @@ const lshapeProducts: Product[] = [
 ];
 
 products.push(...lshapeProducts);
+
+// Sofa Set Designs — client photos with explicit per-image pricing.
+const sofaSetSpecs = (seats: string, color: string) => [
+  { label: "Material", value: "High-density foam, fabric upholstery" },
+  { label: "Seating Capacity", value: seats },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Kiln-dried hardwood frame" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+// Original price set ~10% above sale, rounded to nearest 100.
+const markUp = (sale: number, pct = 10) => Math.round((sale * (1 + pct / 100)) / 100) * 100;
+
+const sofaSetProducts: Product[] = [
+  { ...make("ss-1", "3 Seater Blush Beige Rolled-Arm Sofa", ssBlushRolled, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["new", "featured"], true),
+    attributes: sofaSetSpecs("3 seater", "Blush Beige"), colors: ["#D9C9B6", "#1A1A1A", "#B8A99A"] },
+  { ...make("ss-2", "5 Seater Charcoal Grey Studded Sofa Set", ssCharcoalStudded, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Charcoal Grey"), colors: ["#3A3F44", "#C9A96E", "#1A1A1A"] },
+  { ...make("ss-3", "7 Seater Grey Tufted Sofa Set with Mustard Accents", ssGreyTuftedMustard, "sofa-set-designs", markUp(48000, 10), 48000, 5, ["new", "featured"]),
+    attributes: sofaSetSpecs("7 seater (3+2+2)", "Light Grey with Mustard"), colors: ["#9FA4A8", "#D8932B", "#1A1A1A"] },
+  { ...make("ss-4", "5 Seater Pebble Grey Modern Sofa Set", ssPebbleGrey, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["featured"]),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Pebble Grey"), colors: ["#A6ADAE", "#1A1A1A", "#B8A99A"] },
+  { ...make("ss-5", "5 Seater Ivory Rolled-Arm Sofa Set", ssIvoryRolled, "sofa-set-designs", markUp(48000, 10), 48000, 4.5, ["new", "featured"]),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Ivory White"), colors: ["#F2EBDD", "#1A1A1A", "#C9A96E"] },
+  { ...make("ss-6", "5 Seater Powder Blue Popcorn-Tufted Sofa Set", ssPowderBluePopcorn, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["top", "featured"], true),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Powder Blue"), colors: ["#B7CADB", "#1A1A1A", "#C9A96E"] },
+  { ...make("ss-7", "5 Seater Denim Blue Modular Sofa Set", ssDenimBlueModular, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["top"], true),
+    attributes: sofaSetSpecs("5 seater (3+2) modular", "Denim Blue"), colors: ["#3F6F8E", "#1A1A1A", "#B8A99A"] },
+];
+
+products.push(...sofaSetProducts);
 
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
