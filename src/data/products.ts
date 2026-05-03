@@ -35,6 +35,13 @@ import ssPebbleGrey from "@/assets/sofaset-pebble-grey-3piece.png";
 import ssIvoryRolled from "@/assets/sofaset-ivory-rolled-arm.png";
 import ssPowderBluePopcorn from "@/assets/sofaset-powder-blue-popcorn.png";
 import ssDenimBlueModular from "@/assets/sofaset-denim-blue-modular.png";
+import ssCreamWoodenAccent from "@/assets/sofaset-cream-wooden-accent.png";
+import ssGreyMustardAccent from "@/assets/sofaset-grey-mustard-accent.png";
+import ssEmeraldTextured from "@/assets/sofaset-emerald-textured-3piece.png";
+import ssIvoryPopcornL from "@/assets/sofaset-ivory-popcorn-lshape.png";
+import ssSilverGreyChannel from "@/assets/sofaset-silver-grey-channel.png";
+import ssIvoryStuddedChester from "@/assets/sofaset-ivory-studded-chesterfield.png";
+import ssCreamChannelTufted from "@/assets/sofaset-cream-channel-tufted.png";
 
 export type Product = {
   id: string;
@@ -226,6 +233,20 @@ const sofaSetProducts: Product[] = [
     attributes: sofaSetSpecs("5 seater (3+2)", "Powder Blue"), colors: ["#B7CADB", "#1A1A1A", "#C9A96E"] },
   { ...make("ss-7", "5 Seater Denim Blue Modular Sofa Set", ssDenimBlueModular, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["top"], true),
     attributes: sofaSetSpecs("5 seater (3+2) modular", "Denim Blue"), colors: ["#3F6F8E", "#1A1A1A", "#B8A99A"] },
+  { ...make("ss-8", "5 Seater Cream Sofa Set with Wooden Accents", ssCreamWoodenAccent, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["new", "featured"], true),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Cream Beige"), colors: ["#E5DAC8", "#6B4423", "#1A1A1A"] },
+  { ...make("ss-9", "5 Seater Grey Sofa Set with Mustard Cushions", ssGreyMustardAccent, "sofa-set-designs", markUp(48000, 10), 48000, 4.5, ["new"]),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Slate Grey with Mustard"), colors: ["#7E8A93", "#D8932B", "#1A1A1A"] },
+  { ...make("ss-10", "6 Seater Emerald Green Textured Sofa Set", ssEmeraldTextured, "sofa-set-designs", markUp(45000, 10), 45000, 5, ["new", "featured"]),
+    attributes: sofaSetSpecs("6 seater (3+3)", "Emerald Green"), colors: ["#1F4D3F", "#D8932B", "#1A1A1A"] },
+  { ...make("ss-11", "5 Seater Ivory Popcorn L-Shape Sofa Set", ssIvoryPopcornL, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: sofaSetSpecs("5 seater L-shape", "Ivory White"), colors: ["#F2EBDD", "#1A1A1A", "#B8A99A"] },
+  { ...make("ss-12", "6 Seater Silver Grey Channel-Tufted Sofa Set", ssSilverGreyChannel, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["top", "featured"], true),
+    attributes: sofaSetSpecs("6 seater (3+3)", "Silver Grey"), colors: ["#A6ADAE", "#D8932B", "#1A1A1A"] },
+  { ...make("ss-13", "5 Seater Ivory Studded Chesterfield Sofa Set", ssIvoryStuddedChester, "sofa-set-designs", markUp(55000, 10), 55000, 5, ["top", "featured"], true),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Ivory White"), colors: ["#F2EBDD", "#C9A96E", "#1A1A1A"] },
+  { ...make("ss-14", "6 Seater Cream Channel-Tufted Modular Sofa Set", ssCreamChannelTufted, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: sofaSetSpecs("6 seater modular (3+3)", "Cream Beige"), colors: ["#E5DAC8", "#1A1A1A", "#B8A99A"] },
 ];
 
 products.push(...sofaSetProducts);
