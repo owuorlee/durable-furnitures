@@ -42,6 +42,12 @@ import ssIvoryPopcornL from "@/assets/sofaset-ivory-popcorn-lshape.png";
 import ssSilverGreyChannel from "@/assets/sofaset-silver-grey-channel.png";
 import ssIvoryStuddedChester from "@/assets/sofaset-ivory-studded-chesterfield.png";
 import ssCreamChannelTufted from "@/assets/sofaset-cream-channel-tufted.png";
+import ssCreamStuddedCoffee from "@/assets/sofaset-cream-studded-coffee.png";
+import ssIvoryRolledLoveseat from "@/assets/sofaset-ivory-rolled-loveseat.png";
+import ssCreamGoldAccent from "@/assets/sofaset-cream-gold-accent.png";
+import ssBeigeTexturedWooden from "@/assets/sofaset-beige-textured-wooden.png";
+import ssCreamStuddedShowroom from "@/assets/sofaset-cream-studded-showroom.png";
+import ssCreamChannelDiamond from "@/assets/sofaset-cream-channel-diamond.png";
 
 export type Product = {
   id: string;
@@ -247,6 +253,18 @@ const sofaSetProducts: Product[] = [
     attributes: sofaSetSpecs("5 seater (3+2)", "Ivory White"), colors: ["#F2EBDD", "#C9A96E", "#1A1A1A"] },
   { ...make("ss-14", "6 Seater Cream Channel-Tufted Modular Sofa Set", ssCreamChannelTufted, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new"]),
     attributes: sofaSetSpecs("6 seater modular (3+3)", "Cream Beige"), colors: ["#E5DAC8", "#1A1A1A", "#B8A99A"] },
+  { ...make("ss-15", "5 Seater Cream Studded Sofa Set with Coffee Table", ssCreamStuddedCoffee, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Cream Ivory"), colors: ["#EAE0CE", "#D8932B", "#1A1A1A"] },
+  { ...make("ss-16", "7 Seater Ivory Rolled-Arm Sofa Set", ssIvoryRolledLoveseat, "sofa-set-designs", markUp(45000, 10), 45000, 5, ["new", "featured"]),
+    attributes: sofaSetSpecs("7 seater (3+2+2)", "Ivory White"), colors: ["#F2EBDD", "#1A1A1A", "#C9A96E"] },
+  { ...make("ss-17", "5 Seater Cream Sofa Set with Gold Accents", ssCreamGoldAccent, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Cream Beige"), colors: ["#E8DCC4", "#C9A96E", "#1A1A1A"] },
+  { ...make("ss-18", "5 Seater Beige Textured Sofa Set with Wooden Legs", ssBeigeTexturedWooden, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["top", "featured"], true),
+    attributes: sofaSetSpecs("5 seater (3+2)", "Warm Beige"), colors: ["#C9B79A", "#6B4423", "#1A1A1A"] },
+  { ...make("ss-19", "7 Seater Cream Studded Sofa Set", ssCreamStuddedShowroom, "sofa-set-designs", markUp(45000, 10), 45000, 4.5, ["new", "featured"]),
+    attributes: sofaSetSpecs("7 seater (3+2+2)", "Cream Beige"), colors: ["#E5DAC8", "#7E8A93", "#1A1A1A"] },
+  { ...make("ss-20", "5 Seater Cream Channel-Tufted Sofa Set with Diamond Accents", ssCreamChannelDiamond, "sofa-set-designs", markUp(50000, 10), 50000, 5, ["top", "featured"], true),
+    attributes: sofaSetSpecs("5 seater (3+1+1)", "Cream Beige"), colors: ["#E8DCC4", "#D8B43C", "#1A1A1A"] },
 ];
 
 products.push(...sofaSetProducts);
