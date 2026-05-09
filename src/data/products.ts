@@ -55,6 +55,14 @@ import cbLightGreyWingback from "@/assets/chester-light-grey-wingback.png";
 import cbWhiteSunburst from "@/assets/chester-white-sunburst-panel.png";
 import cbGreyChannelWingback from "@/assets/chester-grey-channel-wingback.png";
 import cbCreamGoldCabinets from "@/assets/chester-cream-gold-cabinets.png";
+import cbGreyCubeTufted from "@/assets/chester-grey-cube-tufted-5x6.png";
+import cbBurntOrangeBubble from "@/assets/chester-burnt-orange-bubble-5x6.png";
+import cbDarkGreyPillowtop from "@/assets/chester-dark-grey-pillowtop-5x6.png";
+import cbTealDiamond from "@/assets/chester-teal-diamond-tufted-6x6.png";
+import cbCreamChannelNightstand from "@/assets/chester-cream-channel-nightstand-6x6.png";
+import cbBlushPinkWingback from "@/assets/chester-blush-pink-wingback-5x6.png";
+import cbBlushCreamPair from "@/assets/chester-blush-cream-channel-pair-5x6.png";
+import cbCreamGoldStripe from "@/assets/chester-cream-gold-stripe-5x6.png";
 
 export type Product = {
   id: string;
@@ -301,6 +309,22 @@ const chesterBedProducts: Product[] = [
     attributes: chesterBedSpecs("5 by 6", "Light Grey"), colors: ["#9FA6AB", "#1A1A1A", "#B8A99A"] },
   { ...make("cb-7", "6 by 6 Cream Channel Chester Bed with Side Cabinets", cbCreamGoldCabinets, "chester-beds", markUp(30000, 10), 30000, 5, ["top", "featured"], true),
     attributes: chesterBedSpecs("6 by 6", "Cream Ivory with Gold"), colors: ["#EAE0CE", "#C9A96E", "#1A1A1A"] },
+  { ...make("cb-8", "5 by 6 Grey Cube-Tufted Chester Bed", cbGreyCubeTufted, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Light Grey"), colors: ["#B8BCBE", "#1A1A1A", "#C9A96E"] },
+  { ...make("cb-9", "5 by 6 Burnt Orange Bubble-Tufted Chester Bed", cbBurntOrangeBubble, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new"]),
+    attributes: chesterBedSpecs("5 by 6", "Burnt Orange"), colors: ["#C0532B", "#1A1A1A", "#E5DAC8"] },
+  { ...make("cb-10", "5 by 6 Dark Grey Pillow-Top Chester Bed", cbDarkGreyPillowtop, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Charcoal Grey"), colors: ["#3F4448", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-11", "6 by 6 Teal Diamond-Tufted Chesterfield Bed", cbTealDiamond, "chester-beds", markUp(30000, 10), 30000, 5, ["top", "featured"], true),
+    attributes: chesterBedSpecs("6 by 6", "Teal Velvet"), colors: ["#3E5965", "#1A1A1A", "#C9A96E"] },
+  { ...make("cb-12", "6 by 6 Cream Channel Chester Bed with Nightstand", cbCreamChannelNightstand, "chester-beds", markUp(30000, 10), 30000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("6 by 6", "Cream Ivory"), colors: ["#E8DFCD", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-13", "5 by 6 Blush Pink Tufted Wingback Chester Bed", cbBlushPinkWingback, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Blush Pink"), colors: ["#C68A8C", "#1A1A1A", "#C9A96E"] },
+  { ...make("cb-14", "5 by 6 Blush & Cream Channel Chester Bed", cbBlushCreamPair, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new"]),
+    attributes: chesterBedSpecs("5 by 6", "Blush Mauve & Cream"), colors: ["#B89A9A", "#E8DCCB", "#1A1A1A"] },
+  { ...make("cb-15", "5 by 6 Cream Channel Chester Bed with Gold Stripe", cbCreamGoldStripe, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Cream Ivory with Gold"), colors: ["#EFE8DA", "#C9A96E", "#1A1A1A"] },
 ];
 
 products.push(...chesterBedProducts);
