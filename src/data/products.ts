@@ -48,6 +48,13 @@ import ssCreamGoldAccent from "@/assets/sofaset-cream-gold-accent.png";
 import ssBeigeTexturedWooden from "@/assets/sofaset-beige-textured-wooden.png";
 import ssCreamStuddedShowroom from "@/assets/sofaset-cream-studded-showroom.png";
 import ssCreamChannelDiamond from "@/assets/sofaset-cream-channel-diamond.png";
+import cbDarkGreyBubble from "@/assets/chester-dark-grey-bubble-5x6.png";
+import cbCreamTuftedSleigh from "@/assets/chester-cream-tufted-sleigh.png";
+import cbGreyGoldSunburst from "@/assets/chester-grey-gold-sunburst.png";
+import cbLightGreyWingback from "@/assets/chester-light-grey-wingback.png";
+import cbWhiteSunburst from "@/assets/chester-white-sunburst-panel.png";
+import cbGreyChannelWingback from "@/assets/chester-grey-channel-wingback.png";
+import cbCreamGoldCabinets from "@/assets/chester-cream-gold-cabinets.png";
 
 export type Product = {
   id: string;
