@@ -48,6 +48,13 @@ import ssCreamGoldAccent from "@/assets/sofaset-cream-gold-accent.png";
 import ssBeigeTexturedWooden from "@/assets/sofaset-beige-textured-wooden.png";
 import ssCreamStuddedShowroom from "@/assets/sofaset-cream-studded-showroom.png";
 import ssCreamChannelDiamond from "@/assets/sofaset-cream-channel-diamond.png";
+import cbDarkGreyBubble from "@/assets/chester-dark-grey-bubble-5x6.png";
+import cbCreamTuftedSleigh from "@/assets/chester-cream-tufted-sleigh.png";
+import cbGreyGoldSunburst from "@/assets/chester-grey-gold-sunburst.png";
+import cbLightGreyWingback from "@/assets/chester-light-grey-wingback.png";
+import cbWhiteSunburst from "@/assets/chester-white-sunburst-panel.png";
+import cbGreyChannelWingback from "@/assets/chester-grey-channel-wingback.png";
+import cbCreamGoldCabinets from "@/assets/chester-cream-gold-cabinets.png";
 
 export type Product = {
   id: string;
@@ -268,6 +275,35 @@ const sofaSetProducts: Product[] = [
 ];
 
 products.push(...sofaSetProducts);
+
+// Chester Beds — client photos with explicit per-image pricing.
+const chesterBedSpecs = (size: string, color: string) => [
+  { label: "Material", value: "Premium fabric upholstery, solid wood frame" },
+  { label: "Size", value: size },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Kiln-dried hardwood frame" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const chesterBedProducts: Product[] = [
+  { ...make("cb-1", "5 by 6 Dark Grey Bubble-Tufted Chester Bed", cbDarkGreyBubble, "chester-beds", markUp(45000, 10), 45000, 5, ["new", "featured"], true),
+    attributes: chesterBedSpecs("5 by 6", "Dark Grey"), colors: ["#3A3F44", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-2", "5 by 6 Cream Tufted Chesterfield Bed", cbCreamTuftedSleigh, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new"]),
+    attributes: chesterBedSpecs("5 by 6", "Cream Beige"), colors: ["#E5DAC8", "#1A1A1A", "#C9A96E"] },
+  { ...make("cb-3", "6 by 6 Grey Chester Bed with Gold Accents", cbGreyGoldSunburst, "chester-beds", markUp(30000, 10), 30000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("6 by 6", "Light Grey with Gold"), colors: ["#A6ADAE", "#C9A96E", "#1A1A1A"] },
+  { ...make("cb-4", "5 by 6 Light Grey Tufted Wingback Chester Bed", cbLightGreyWingback, "chester-beds", markUp(28000, 10), 28000, 4.5, ["featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Light Grey"), colors: ["#BFC4C7", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-5", "4 by 6 White Sunburst Panel Chester Bed", cbWhiteSunburst, "chester-beds", markUp(25000, 10), 25000, 4.5, ["new"]),
+    attributes: chesterBedSpecs("4 by 6", "Off White"), colors: ["#F0EDE6", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-6", "5 by 6 Grey Channel Wingback Chester Bed", cbGreyChannelWingback, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Light Grey"), colors: ["#9FA6AB", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-7", "6 by 6 Cream Channel Chester Bed with Side Cabinets", cbCreamGoldCabinets, "chester-beds", markUp(30000, 10), 30000, 5, ["top", "featured"], true),
+    attributes: chesterBedSpecs("6 by 6", "Cream Ivory with Gold"), colors: ["#EAE0CE", "#C9A96E", "#1A1A1A"] },
+];
+
+products.push(...chesterBedProducts);
 
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
