@@ -63,6 +63,14 @@ import cbCreamChannelNightstand from "@/assets/chester-cream-channel-nightstand-
 import cbBlushPinkWingback from "@/assets/chester-blush-pink-wingback-5x6.png";
 import cbBlushCreamPair from "@/assets/chester-blush-cream-channel-pair-5x6.png";
 import cbCreamGoldStripe from "@/assets/chester-cream-gold-stripe-5x6.png";
+import cbLightGreyGoldSunburst from "@/assets/chester-light-grey-gold-sunburst-6x6.png";
+import cbIvoryChannelWingback from "@/assets/chester-ivory-channel-wingback-6x6.png";
+import cbCreamGoldPanel from "@/assets/chester-cream-gold-panel-6x6.png";
+import cbGreyGridNightstands from "@/assets/chester-grey-grid-nightstands-6x6.png";
+import cbNavyGoldChevron from "@/assets/chester-navy-gold-chevron-6x6.png";
+import cbSlateFanPanel from "@/assets/chester-slate-fan-panel-6x6.png";
+import cbNavyDiamondStudded from "@/assets/chester-navy-diamond-studded-5x6.png";
+import cbCreamGoldChevron from "@/assets/chester-cream-gold-chevron-5x6.png";
 
 export type Product = {
   id: string;
