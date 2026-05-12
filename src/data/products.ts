@@ -84,6 +84,16 @@ import wbMahoganyCreamTwoTone from "@/assets/wooden-mahogany-cream-two-tone-5x6.
 import wbWhiteSlattedPanel from "@/assets/wooden-white-slatted-panel-4x6.png";
 import wbWhitePanelled from "@/assets/wooden-white-panelled-6x6.png";
 import wbDarkMahoganyGrid from "@/assets/wooden-dark-mahogany-grid-6x6.png";
+import wbWhiteTwinPanelled from "@/assets/wooden-white-twin-panelled-4x6.png";
+import wbDarkMahoganyMedallion from "@/assets/wooden-dark-mahogany-medallion-5x6.png";
+import wbWhitePanelledNightstands from "@/assets/wooden-white-panelled-nightstands-6x6.png";
+import wbGreigePanelledNightstands from "@/assets/wooden-greige-panelled-nightstands-6x6.png";
+import wbWhiteClassicPanelled from "@/assets/wooden-white-classic-panelled-5x6.png";
+import wbWhiteMinimalPanel from "@/assets/wooden-white-minimal-panel-4x6.png";
+import wbWhitePanelledBedroom from "@/assets/wooden-white-panelled-bedroom-6x6.png";
+import wbWhiteArchedSlat from "@/assets/wooden-white-arched-slat-6x6.png";
+import wbWhiteElegantPanelled from "@/assets/wooden-white-elegant-panelled-6x6.png";
+import wbWhiteBeveledPanel from "@/assets/wooden-white-beveled-panel-5x6.png";
 
 export type Product = {
   id: string;
@@ -403,6 +413,26 @@ const woodenBedProducts: Product[] = [
     attributes: woodenBedSpecs("6 by 6", "White"), colors: ["#F4F1EA", "#1A1A1A", "#B8A99A"] },
   { ...make("wb-9", "6 by 6 Dark Mahogany Grid-Panel Wooden Bed", wbDarkMahoganyGrid, "wooden-beds", markUp(35000, 10), 35000, 5, ["new", "featured"]),
     attributes: woodenBedSpecs("6 by 6", "Dark Mahogany"), colors: ["#3A1E18", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-10", "4 by 6 White Twin Panelled Wooden Bed", wbWhiteTwinPanelled, "wooden-beds", markUp(25000, 10), 25000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("4 by 6", "White"), colors: ["#F4F1EA", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-11", "5 by 6 Dark Mahogany Medallion Wooden Bed", wbDarkMahoganyMedallion, "wooden-beds", markUp(30000, 10), 30000, 4.5, ["new", "featured"]),
+    attributes: woodenBedSpecs("5 by 6", "Dark Mahogany"), colors: ["#3B221A", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-12", "6 by 6 White Panelled Wooden Bed with Nightstands", wbWhitePanelledNightstands, "wooden-beds", markUp(35000, 10), 35000, 5, ["new", "featured"]),
+    attributes: woodenBedSpecs("6 by 6", "White"), colors: ["#F6F2EA", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-13", "6 by 6 Greige Panelled Wooden Bed with Nightstands", wbGreigePanelledNightstands, "wooden-beds", markUp(35000, 10), 35000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("6 by 6", "Greige"), colors: ["#8F857D", "#C9A96E", "#1A1A1A"] },
+  { ...make("wb-14", "5 by 6 White Classic Panelled Wooden Bed", wbWhiteClassicPanelled, "wooden-beds", markUp(30000, 10), 30000, 4.5, ["new", "featured"]),
+    attributes: woodenBedSpecs("5 by 6", "White"), colors: ["#F5F1E8", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-15", "4 by 6 White Minimal Panel Wooden Bed", wbWhiteMinimalPanel, "wooden-beds", markUp(25000, 10), 25000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("4 by 6", "White"), colors: ["#F5F2EA", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-16", "6 by 6 White Panelled Wooden Bed Bedroom Set", wbWhitePanelledBedroom, "wooden-beds", markUp(35000, 10), 35000, 5, ["new", "featured"]),
+    attributes: woodenBedSpecs("6 by 6", "White"), colors: ["#F7F4EE", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-17", "6 by 6 White Arched Slat Wooden Bed", wbWhiteArchedSlat, "wooden-beds", markUp(35000, 10), 35000, 5, ["top", "featured"], true),
+    attributes: woodenBedSpecs("6 by 6", "White"), colors: ["#F4F1EA", "#1A1A1A", "#C9A96E"] },
+  { ...make("wb-18", "6 by 6 White Elegant Panelled Wooden Bed", wbWhiteElegantPanelled, "wooden-beds", markUp(35000, 10), 35000, 4.5, ["new", "featured"]),
+    attributes: woodenBedSpecs("6 by 6", "White"), colors: ["#F5F3ED", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-19", "5 by 6 White Beveled Panel Wooden Bed", wbWhiteBeveledPanel, "wooden-beds", markUp(30000, 10), 30000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("5 by 6", "White"), colors: ["#F4F1EA", "#1A1A1A", "#B8A99A"] },
 ];
 
 products.push(...woodenBedProducts);
