@@ -84,6 +84,16 @@ import wbMahoganyCreamTwoTone from "@/assets/wooden-mahogany-cream-two-tone-5x6.
 import wbWhiteSlattedPanel from "@/assets/wooden-white-slatted-panel-4x6.png";
 import wbWhitePanelled from "@/assets/wooden-white-panelled-6x6.png";
 import wbDarkMahoganyGrid from "@/assets/wooden-dark-mahogany-grid-6x6.png";
+import wbWhiteTwinPanelled from "@/assets/wooden-white-twin-panelled-4x6.png";
+import wbDarkMahoganyMedallion from "@/assets/wooden-dark-mahogany-medallion-5x6.png";
+import wbWhitePanelledNightstands from "@/assets/wooden-white-panelled-nightstands-6x6.png";
+import wbGreigePanelledNightstands from "@/assets/wooden-greige-panelled-nightstands-6x6.png";
+import wbWhiteClassicPanelled from "@/assets/wooden-white-classic-panelled-5x6.png";
+import wbWhiteMinimalPanel from "@/assets/wooden-white-minimal-panel-4x6.png";
+import wbWhitePanelledBedroom from "@/assets/wooden-white-panelled-bedroom-6x6.png";
+import wbWhiteArchedSlat from "@/assets/wooden-white-arched-slat-6x6.png";
+import wbWhiteElegantPanelled from "@/assets/wooden-white-elegant-panelled-6x6.png";
+import wbWhiteBeveledPanel from "@/assets/wooden-white-beveled-panel-5x6.png";
 
 export type Product = {
   id: string;
