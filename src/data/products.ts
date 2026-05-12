@@ -75,6 +75,15 @@ import cbTealChannelWingback from "@/assets/chester-teal-channel-wingback-5x6.pn
 import cbBeigeGoldStripe from "@/assets/chester-beige-gold-stripe-4x6.png";
 import cbGreyGoldSunburstTall from "@/assets/chester-grey-gold-sunburst-tall-6x6.png";
 import cbDarkTealDiamond from "@/assets/chester-dark-teal-diamond-chesterfield-6x6.png";
+import wbGreyPanelled from "@/assets/wooden-grey-panelled-6x6.png";
+import wbWhiteMahoganyTrim from "@/assets/wooden-white-mahogany-trim-6x6.png";
+import wbMahoganyLattice from "@/assets/wooden-mahogany-lattice-carved-5x6.png";
+import wbDarkWalnutCarved from "@/assets/wooden-dark-walnut-carved-5x6.png";
+import wbWhiteOvalPanel from "@/assets/wooden-white-oval-panel-4x6.png";
+import wbMahoganyCreamTwoTone from "@/assets/wooden-mahogany-cream-two-tone-5x6.png";
+import wbWhiteSlattedPanel from "@/assets/wooden-white-slatted-panel-4x6.png";
+import wbWhitePanelled from "@/assets/wooden-white-panelled-6x6.png";
+import wbDarkMahoganyGrid from "@/assets/wooden-dark-mahogany-grid-6x6.png";
 
 export type Product = {
   id: string;
@@ -364,6 +373,39 @@ const chesterBedProducts: Product[] = [
 ];
 
 products.push(...chesterBedProducts);
+
+// Wooden Beds — client photos. Pricing strictly by size: 6x6=35K, 5x6=30K, 4x6=25K.
+const woodenBedSpecs = (size: string, color: string) => [
+  { label: "Material", value: "Solid hardwood, smooth lacquer finish" },
+  { label: "Size", value: size },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Kiln-dried hardwood frame" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const woodenBedProducts: Product[] = [
+  { ...make("wb-1", "6 by 6 Grey Panelled Wooden Bed", wbGreyPanelled, "wooden-beds", markUp(35000, 10), 35000, 5, ["new", "featured"], true),
+    attributes: woodenBedSpecs("6 by 6", "Slate Grey"), colors: ["#7A8085", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-2", "6 by 6 White Wooden Bed with Mahogany Trim", wbWhiteMahoganyTrim, "wooden-beds", markUp(35000, 10), 35000, 4.5, ["new", "featured"]),
+    attributes: woodenBedSpecs("6 by 6", "White with Mahogany Trim"), colors: ["#F5F2EC", "#4A2C2A", "#1A1A1A"] },
+  { ...make("wb-3", "5 by 6 Mahogany Lattice-Carved Wooden Bed", wbMahoganyLattice, "wooden-beds", markUp(30000, 10), 30000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("5 by 6", "Dark Mahogany"), colors: ["#3E1F18", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-4", "5 by 6 Dark Walnut Carved Wooden Bed", wbDarkWalnutCarved, "wooden-beds", markUp(30000, 10), 30000, 4.5, ["new", "featured"]),
+    attributes: woodenBedSpecs("5 by 6", "Dark Walnut"), colors: ["#2E1B12", "#E8DCC2", "#1A1A1A"] },
+  { ...make("wb-5", "4 by 6 White Oval Panel Wooden Bed", wbWhiteOvalPanel, "wooden-beds", markUp(25000, 10), 25000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("4 by 6", "White"), colors: ["#F4F1EA", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-6", "5 by 6 Mahogany & Cream Two-Tone Wooden Bed", wbMahoganyCreamTwoTone, "wooden-beds", markUp(30000, 10), 30000, 4.5, ["new", "featured"]),
+    attributes: woodenBedSpecs("5 by 6", "Mahogany & Cream"), colors: ["#4A2C2A", "#EDE3D2", "#1A1A1A"] },
+  { ...make("wb-7", "4 by 6 White Slatted Panel Wooden Bed", wbWhiteSlattedPanel, "wooden-beds", markUp(25000, 10), 25000, 4.5, ["new"]),
+    attributes: woodenBedSpecs("4 by 6", "White"), colors: ["#F2EFE8", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-8", "6 by 6 White Panelled Wooden Bed", wbWhitePanelled, "wooden-beds", markUp(35000, 10), 35000, 5, ["top", "featured"], true),
+    attributes: woodenBedSpecs("6 by 6", "White"), colors: ["#F4F1EA", "#1A1A1A", "#B8A99A"] },
+  { ...make("wb-9", "6 by 6 Dark Mahogany Grid-Panel Wooden Bed", wbDarkMahoganyGrid, "wooden-beds", markUp(35000, 10), 35000, 5, ["new", "featured"]),
+    attributes: woodenBedSpecs("6 by 6", "Dark Mahogany"), colors: ["#3A1E18", "#1A1A1A", "#B8A99A"] },
+];
+
+products.push(...woodenBedProducts);
 
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
