@@ -71,6 +71,10 @@ import cbNavyGoldChevron from "@/assets/chester-navy-gold-chevron-6x6.png";
 import cbSlateFanPanel from "@/assets/chester-slate-fan-panel-6x6.png";
 import cbNavyDiamondStudded from "@/assets/chester-navy-diamond-studded-5x6.png";
 import cbCreamGoldChevron from "@/assets/chester-cream-gold-chevron-5x6.png";
+import cbTealChannelWingback from "@/assets/chester-teal-channel-wingback-5x6.png";
+import cbBeigeGoldStripe from "@/assets/chester-beige-gold-stripe-4x6.png";
+import cbGreyGoldSunburstTall from "@/assets/chester-grey-gold-sunburst-tall-6x6.png";
+import cbDarkTealDiamond from "@/assets/chester-dark-teal-diamond-chesterfield-6x6.png";
 
 export type Product = {
   id: string;
@@ -349,6 +353,14 @@ const chesterBedProducts: Product[] = [
     attributes: chesterBedSpecs("5 by 6", "Navy Blue"), colors: ["#1E2746", "#1A1A1A", "#C9A96E"] },
   { ...make("cb-23", "5 by 6 Cream Chester Bed with Gold Chevron Detail", cbCreamGoldChevron, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
     attributes: chesterBedSpecs("5 by 6", "Cream Ivory with Gold"), colors: ["#F0E7D8", "#C9A96E", "#1A1A1A"] },
+  { ...make("cb-24", "5 by 6 Teal Channel-Tufted Wingback Chester Bed", cbTealChannelWingback, "chester-beds", markUp(28000, 10), 28000, 4.5, ["new", "featured"]),
+    attributes: chesterBedSpecs("5 by 6", "Teal Velvet"), colors: ["#1FA5BD", "#1A1A1A", "#B8A99A"] },
+  { ...make("cb-25", "4 by 6 Beige Channel Chester Bed with Gold Stripes", cbBeigeGoldStripe, "chester-beds", markUp(25000, 10), 25000, 4.5, ["new"]),
+    attributes: chesterBedSpecs("4 by 6", "Beige with Gold"), colors: ["#C9B79A", "#C9A96E", "#1A1A1A"] },
+  { ...make("cb-26", "6 by 6 Grey Sunburst Chester Bed with Gold Trim", cbGreyGoldSunburstTall, "chester-beds", markUp(30000, 10), 30000, 5, ["top", "featured"], true),
+    attributes: chesterBedSpecs("6 by 6", "Light Grey with Gold"), colors: ["#B7BAB8", "#C9A96E", "#1A1A1A"] },
+  { ...make("cb-27", "6 by 6 Dark Teal Diamond-Tufted Chesterfield Bed", cbDarkTealDiamond, "chester-beds", markUp(30000, 10), 30000, 5, ["top", "featured"], true),
+    attributes: chesterBedSpecs("6 by 6", "Dark Teal Velvet"), colors: ["#2F4A52", "#1A1A1A", "#C9A96E"] },
 ];
 
 products.push(...chesterBedProducts);
