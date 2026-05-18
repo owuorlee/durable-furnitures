@@ -94,6 +94,14 @@ import wbWhitePanelledBedroom from "@/assets/wooden-white-panelled-bedroom-6x6.p
 import wbWhiteArchedSlat from "@/assets/wooden-white-arched-slat-6x6.png";
 import wbWhiteElegantPanelled from "@/assets/wooden-white-elegant-panelled-6x6.png";
 import wbWhiteBeveledPanel from "@/assets/wooden-white-beveled-panel-5x6.png";
+import dtWhiteBlackTufted from "@/assets/dining-white-black-tufted-4seat.png";
+import dtMahoganyCream from "@/assets/dining-mahogany-cream-6seat.png";
+import dtEspressoCarved from "@/assets/dining-espresso-carved-4seat.png";
+import dtWhiteOvalFluted from "@/assets/dining-white-oval-fluted-6seat.png";
+import dtWoodOvalBrown from "@/assets/dining-wood-oval-brown-6seat.png";
+import dtHoneyMahoganyBlack from "@/assets/dining-honey-mahogany-black-6seat.png";
+import dtWalnutGrey from "@/assets/dining-walnut-grey-6seat.png";
+import dtWhiteGoldGrey from "@/assets/dining-white-gold-grey-8seat.png";
 
 export type Product = {
   id: string;
