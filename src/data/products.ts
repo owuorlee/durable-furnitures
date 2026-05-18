@@ -446,6 +446,37 @@ const woodenBedProducts: Product[] = [
 
 products.push(...woodenBedProducts);
 
+// Dining Tables — client photos. Sale prices set per image; original auto marked up ~10%.
+const diningTableSpecs = (seats: string, color: string) => [
+  { label: "Material", value: "Solid hardwood, high-gloss finish" },
+  { label: "Seating Capacity", value: seats },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Kiln-dried hardwood frame" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const diningTableProducts: Product[] = [
+  { ...make("dt-1", "4 Seater White Dining Table with Black Tufted Chairs", dtWhiteBlackTufted, "dining-tables", markUp(45000, 10), 45000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("4 Persons", "White with Black Chairs"), colors: ["#F4F1EA", "#1A1A1A", "#C9A96E"] },
+  { ...make("dt-2", "6 Seater Dark Mahogany Dining Table with Cream Tufted Chairs", dtMahoganyCream, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Dark Mahogany with Cream Chairs"), colors: ["#3E1F18", "#EDE3D2", "#1A1A1A"] },
+  { ...make("dt-3", "4 Seater Dark Espresso Carved Dining Table", dtEspressoCarved, "dining-tables", markUp(55000, 10), 55000, 4.5, ["new"]),
+    attributes: diningTableSpecs("4 Persons", "Dark Espresso"), colors: ["#2A1812", "#F2A03D", "#B8A99A"] },
+  { ...make("dt-4", "6 Seater White Oval Fluted Pedestal Dining Table", dtWhiteOvalFluted, "dining-tables", markUp(75000, 10), 75000, 5, ["top", "featured"], true),
+    attributes: diningTableSpecs("6 Persons", "Ivory White with Cream Bouclé Chairs"), colors: ["#F4F1EA", "#A87B4A", "#1A1A1A"] },
+  { ...make("dt-5", "6 Seater Wooden Oval Dining Table with Brown Tufted Chairs", dtWoodOvalBrown, "dining-tables", markUp(55000, 10), 55000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Mahogany with Brown Leather Chairs"), colors: ["#7A3A1F", "#5A3A2A", "#1A1A1A"] },
+  { ...make("dt-6", "6 Seater Honey Mahogany Dining Table with Black Tufted Chairs", dtHoneyMahoganyBlack, "dining-tables", markUp(53000, 10), 53000, 4.5, ["new"]),
+    attributes: diningTableSpecs("6 Persons", "Honey Mahogany with Black Chairs"), colors: ["#A0633A", "#1A1A1A", "#B8A99A"] },
+  { ...make("dt-7", "6 Seater Dark Walnut Dining Table with Grey Chairs", dtWalnutGrey, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Dark Walnut with Grey Chairs"), colors: ["#3A1F14", "#B8B2A8", "#1A1A1A"] },
+  { ...make("dt-8", "8 Seater White & Gold Dining Table with Grey Tufted Chairs", dtWhiteGoldGrey, "dining-tables", markUp(55000, 10), 55000, 5, ["top", "featured"], true),
+    attributes: diningTableSpecs("8 Persons", "White & Gold with Grey Chairs"), colors: ["#F6F2EA", "#C9A96E", "#8F8A85"] },
+];
+
+products.push(...diningTableProducts);
+
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
 
