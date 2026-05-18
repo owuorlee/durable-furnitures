@@ -138,7 +138,7 @@ export const categories: Category[] = [
   { slug: "coffee-tables", name: "Coffee Tables", image: img7, parent: "living-room" },
   { slug: "tv-stands", name: "TV Stands", image: img8, parent: "living-room" },
   { slug: "dining-sets", name: "Dining Sets", image: img6, parent: "dining" },
-  { slug: "dining-tables", name: "Dining Tables", image: img6, parent: "dining" },
+  { slug: "dining-tables", name: "Dining Tables", image: dtWhiteOvalFluted, parent: "dining" },
 ];
 
 export const parentCategories: Record<string, string> = {
