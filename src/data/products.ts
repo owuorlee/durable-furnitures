@@ -459,6 +459,6 @@ export const navStructure = [
   { slug: "bedroom", name: "Bedroom", children: ["chester-beds", "wooden-beds"] },
   { slug: "living-room", name: "Living Room", children: ["coffee-tables", "tv-stands"] },
   { slug: "chairs", name: "Chairs", children: ["chester-seats"] },
-  { slug: "dining", name: "Dining Table Designs", children: ["dining-sets"] },
+  { slug: "dining", name: "Dining Table Designs", children: ["dining-sets", "dining-tables"] },
   { slug: "doors", name: "Doors & Frames", children: [] },
 ];
