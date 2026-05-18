@@ -102,6 +102,16 @@ import dtWoodOvalBrown from "@/assets/dining-wood-oval-brown-6seat.png";
 import dtHoneyMahoganyBlack from "@/assets/dining-honey-mahogany-black-6seat.png";
 import dtWalnutGrey from "@/assets/dining-walnut-grey-6seat.png";
 import dtWhiteGoldGrey from "@/assets/dining-white-gold-grey-8seat.png";
+import dtMarbleTopWhiteTufted from "@/assets/dining-marble-top-white-tufted-8seat.png";
+import dtWhiteBlackTopZigzag from "@/assets/dining-white-black-top-zigzag-4seat.png";
+import dtSolidMahoganyCream from "@/assets/dining-solid-mahogany-cream-6seat.png";
+import dtOvalMahoganyOrangeLattice from "@/assets/dining-oval-mahogany-orange-lattice-6seat.png";
+import dtMahoganyTealVelvet from "@/assets/dining-mahogany-teal-velvet-6seat.png";
+import dtOvalMahoganyOrangeLatticeV2 from "@/assets/dining-oval-mahogany-orange-lattice-v2-6seat.png";
+import dtDarkMahoganyCreamTufted from "@/assets/dining-dark-mahogany-cream-tufted-8seat.png";
+import dtDarkWoodFloral from "@/assets/dining-dark-wood-floral-6seat.png";
+import dtBlackOvalLatticeFloral from "@/assets/dining-black-oval-lattice-floral-6seat.png";
+import dtMahoganyOvalCream from "@/assets/dining-mahogany-oval-cream-6seat.png";
 
 export type Product = {
   id: string;
@@ -473,6 +483,26 @@ const diningTableProducts: Product[] = [
     attributes: diningTableSpecs("6 Persons", "Dark Walnut with Grey Chairs"), colors: ["#3A1F14", "#B8B2A8", "#1A1A1A"] },
   { ...make("dt-8", "8 Seater White & Gold Dining Table with Grey Tufted Chairs", dtWhiteGoldGrey, "dining-tables", markUp(55000, 10), 55000, 5, ["top", "featured"], true),
     attributes: diningTableSpecs("8 Persons", "White & Gold with Grey Chairs"), colors: ["#F6F2EA", "#C9A96E", "#8F8A85"] },
+  { ...make("dt-9", "8 Seater Marble Top Dining Table with White Tufted Chairs", dtMarbleTopWhiteTufted, "dining-tables", markUp(60000, 10), 60000, 5, ["top", "featured"], true),
+    attributes: diningTableSpecs("8 Persons", "Marble Top with White Tufted Chairs"), colors: ["#EDE7DC", "#7A2E1C", "#1A1A1A"] },
+  { ...make("dt-10", "4 Seater White Dining Table with Black Top & Zigzag Chairs", dtWhiteBlackTopZigzag, "dining-tables", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: diningTableSpecs("4 Persons", "White Frame, Black Top, Zigzag Upholstery"), colors: ["#F5F2EC", "#1A1A1A", "#D97A2A"] },
+  { ...make("dt-11", "6 Seater Solid Mahogany Wooden Dining Table", dtSolidMahoganyCream, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Solid Mahogany with Cream Cushions"), colors: ["#A0633A", "#EDE3D2", "#5A3A2A"] },
+  { ...make("dt-12", "6 Seater Oval Mahogany Dining Table with Orange Lattice Chairs", dtOvalMahoganyOrangeLattice, "dining-tables", markUp(54000, 10), 54000, 4.5, ["new"]),
+    attributes: diningTableSpecs("6 Persons", "Mahogany with Burnt Orange Lattice Chairs"), colors: ["#B5470F", "#5A2A14", "#1A1A1A"] },
+  { ...make("dt-13", "6 Seater Mahogany Dining Table with Teal Velvet Tufted Chairs", dtMahoganyTealVelvet, "dining-tables", markUp(55000, 10), 55000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Mahogany with Teal Velvet Chairs"), colors: ["#5A1810", "#0E6E78", "#1A1A1A"] },
+  { ...make("dt-14", "6 Seater Oval Mahogany Dining Set with Lattice Back Chairs", dtOvalMahoganyOrangeLatticeV2, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new"]),
+    attributes: diningTableSpecs("6 Persons", "Mahogany with Lattice Back Chairs"), colors: ["#B5470F", "#5A2A14", "#1A1A1A"] },
+  { ...make("dt-15", "8 Seater Dark Mahogany Dining Table with Cream Tufted Chairs", dtDarkMahoganyCreamTufted, "dining-tables", markUp(55000, 10), 55000, 5, ["top", "featured"]),
+    attributes: diningTableSpecs("8 Persons", "Dark Mahogany with Cream Tufted Chairs"), colors: ["#3A1F14", "#EDE3D2", "#1A1A1A"] },
+  { ...make("dt-16", "6 Seater Dark Wood Dining Table with Floral Cushioned Chairs", dtDarkWoodFloral, "dining-tables", markUp(53000, 10), 53000, 4.5, ["new"]),
+    attributes: diningTableSpecs("6 Persons", "Dark Wood with Floral Cushioned Chairs"), colors: ["#4A2418", "#B8A99A", "#1A1A1A"] },
+  { ...make("dt-17", "6 Seater Black Oval Dining Table with Lattice & Floral Chairs", dtBlackOvalLatticeFloral, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Black with Floral Upholstered Chairs"), colors: ["#1A1A1A", "#E8DCD0", "#7A4A3A"] },
+  { ...make("dt-18", "6 Seater Mahogany Oval Dining Table with Cream Upholstered Chairs", dtMahoganyOvalCream, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new"]),
+    attributes: diningTableSpecs("6 Persons", "Carved Mahogany with Cream Upholstery"), colors: ["#A0633A", "#EDE3D2", "#5A3A2A"] },
 ];
 
 products.push(...diningTableProducts);
