@@ -539,6 +539,18 @@ const diningTableProducts: Product[] = [
     attributes: diningTableSpecs("6 Persons", "Polished Mahogany with Dark Leather Cushioned Chairs"), colors: ["#7A3A1F", "#1A1A1A", "#5A3A2A"] },
   { ...make("dt-28", "6 Seater Black Dining Table with Grey Cushioned Chairs", dtBlackGreyCushion, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new"]),
     attributes: diningTableSpecs("6 Persons", "Matte Black with Grey Cushioned Chairs"), colors: ["#1A1A1A", "#8F8A85", "#3A3A3A"] },
+  { ...make("dt-29", "6 Seater Honey Mahogany Dining Table with Striped Chairs", dtHoneyMahoganyStripe, "dining-tables", markUp(55000, 10), 55000, 5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Honey Mahogany with Multicolor Striped Cushions"), colors: ["#A0633A", "#EDE3D2", "#1A1A1A"] },
+  { ...make("dt-30", "4 Seater Polished Mahogany Dining Table with White Panel Chairs", dtPolishedMahoganyWhitePanel, "dining-tables", markUp(45000, 10), 45000, 4.5, ["new"]),
+    attributes: diningTableSpecs("4 Persons", "Polished Mahogany with White Panel-Back Chairs"), colors: ["#7A3A1F", "#F4F1EA", "#5A3A2A"] },
+  { ...make("dt-31", "6 Seater Dark Mahogany Dining Table with Carved Cross-Back Chairs", dtDarkMahoganyCarvedCross, "dining-tables", markUp(52000, 10), 52000, 5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Dark Mahogany with Floral Cushioned Cross-Back Chairs"), colors: ["#3E1F18", "#EDE3D2", "#1A1A1A"] },
+  { ...make("dt-32", "6 Seater Polished Mahogany Dining Table with Ladder-Back Chairs", dtPolishedMahoganyLadderback, "dining-tables", markUp(53000, 10), 53000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Polished Mahogany with Cream Ladder-Back Chairs"), colors: ["#7A2E1C", "#EDE3D2", "#5A3A2A"] },
+  { ...make("dt-33", "6 Seater White Dining Table with Grey Panel Chairs", dtWhiteGreyPanel, "dining-tables", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "White with Grey Panel Cushioned Chairs"), colors: ["#F4F1EA", "#8F8A85", "#1A1A1A"] },
+  { ...make("dt-34", "6 Seater Dark Mahogany Oval Dining Table with Pierced-Back Chairs", dtDarkMahoganyPiercedOval, "dining-tables", markUp(53000, 10), 53000, 5, ["top", "featured"], true),
+    attributes: diningTableSpecs("6 Persons", "Dark Mahogany Oval with Pierced-Back Patterned Chairs"), colors: ["#3E1F18", "#B8A99A", "#1A1A1A"] },
 ];
 
 products.push(...diningTableProducts);
