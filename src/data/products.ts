@@ -112,6 +112,16 @@ import dtDarkMahoganyCreamTufted from "@/assets/dining-dark-mahogany-cream-tufte
 import dtDarkWoodFloral from "@/assets/dining-dark-wood-floral-6seat.png";
 import dtBlackOvalLatticeFloral from "@/assets/dining-black-oval-lattice-floral-6seat.png";
 import dtMahoganyOvalCream from "@/assets/dining-mahogany-oval-cream-6seat.png";
+import dtMahoganyCreamBrownV2 from "@/assets/dining-mahogany-cream-brown-6seat-v2.png";
+import dtMahoganyOvalCarved from "@/assets/dining-mahogany-oval-carved-6seat.png";
+import dtWhiteMarbleRoyalBlue from "@/assets/dining-white-marble-royal-blue-6seat.png";
+import dtWhiteBlackTopZigzagV2 from "@/assets/dining-white-black-top-zigzag-4seat-v2.png";
+import dtMahoganyCrisscrossOval from "@/assets/dining-mahogany-crisscross-oval-6seat.png";
+import dtDarkMahoganySquareFloral from "@/assets/dining-dark-mahogany-square-floral-4seat.png";
+import dtWhiteGreenVelvet from "@/assets/dining-white-green-velvet-4seat.png";
+import dtWhiteOvalTealVelvet from "@/assets/dining-white-oval-teal-velvet-6seat.png";
+import dtMahoganyDarkCushion from "@/assets/dining-mahogany-dark-cushion-6seat.png";
+import dtBlackGreyCushion from "@/assets/dining-black-grey-cushion-6seat.png";
 
 export type Product = {
   id: string;
