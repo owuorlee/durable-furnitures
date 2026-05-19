@@ -122,6 +122,12 @@ import dtWhiteGreenVelvet from "@/assets/dining-white-green-velvet-4seat.png";
 import dtWhiteOvalTealVelvet from "@/assets/dining-white-oval-teal-velvet-6seat.png";
 import dtMahoganyDarkCushion from "@/assets/dining-mahogany-dark-cushion-6seat.png";
 import dtBlackGreyCushion from "@/assets/dining-black-grey-cushion-6seat.png";
+import dtHoneyMahoganyStripe from "@/assets/dining-honey-mahogany-stripe-6seat.png";
+import dtPolishedMahoganyWhitePanel from "@/assets/dining-polished-mahogany-white-panel-4seat.png";
+import dtDarkMahoganyCarvedCross from "@/assets/dining-dark-mahogany-carved-cross-6seat.png";
+import dtPolishedMahoganyLadderback from "@/assets/dining-polished-mahogany-ladderback-6seat.png";
+import dtWhiteGreyPanel from "@/assets/dining-white-grey-panel-6seat.png";
+import dtDarkMahoganyPiercedOval from "@/assets/dining-dark-mahogany-pierced-oval-6seat.png";
 
 export type Product = {
   id: string;
