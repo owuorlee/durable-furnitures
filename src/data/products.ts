@@ -128,6 +128,10 @@ import dtDarkMahoganyCarvedCross from "@/assets/dining-dark-mahogany-carved-cros
 import dtPolishedMahoganyLadderback from "@/assets/dining-polished-mahogany-ladderback-6seat.png";
 import dtWhiteGreyPanel from "@/assets/dining-white-grey-panel-6seat.png";
 import dtDarkMahoganyPiercedOval from "@/assets/dining-dark-mahogany-pierced-oval-6seat.png";
+import dtMahoganyOvalCarvedZigzag from "@/assets/dining-mahogany-oval-carved-zigzag-6seat.png";
+import dtMahoganyOvalLadderback from "@/assets/dining-mahogany-oval-ladderback-6seat.png";
+import dtDarkMahoganyRectSlat from "@/assets/dining-dark-mahogany-rect-slat-6seat.png";
+import dtDarkEspressoCrossChevron from "@/assets/dining-dark-espresso-cross-chevron-6seat.png";
 
 export type Product = {
   id: string;
@@ -551,6 +555,14 @@ const diningTableProducts: Product[] = [
     attributes: diningTableSpecs("6 Persons", "White with Grey Panel Cushioned Chairs"), colors: ["#F4F1EA", "#8F8A85", "#1A1A1A"] },
   { ...make("dt-34", "6 Seater Dark Mahogany Oval Dining Table with Pierced-Back Chairs", dtDarkMahoganyPiercedOval, "dining-tables", markUp(53000, 10), 53000, 5, ["top", "featured"], true),
     attributes: diningTableSpecs("6 Persons", "Dark Mahogany Oval with Pierced-Back Patterned Chairs"), colors: ["#3E1F18", "#B8A99A", "#1A1A1A"] },
+  { ...make("dt-35", "6 Seater Honey Mahogany Oval Dining Table with Carved Zigzag Chairs", dtMahoganyOvalCarvedZigzag, "dining-tables", markUp(53000, 10), 53000, 5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Honey Mahogany with Carved Lattice Backs & Orange Zigzag Cushions"), colors: ["#A0633A", "#D97A2A", "#1A1A1A"] },
+  { ...make("dt-36", "6 Seater Mahogany Oval Dining Table with Ladder-Back Chairs", dtMahoganyOvalLadderback, "dining-tables", markUp(53000, 10), 53000, 4.5, ["new", "featured"]),
+    attributes: diningTableSpecs("6 Persons", "Polished Mahogany with Ladder-Back Cushioned Chairs"), colors: ["#7A3A1F", "#EDE3D2", "#5A3A2A"] },
+  { ...make("dt-37", "6 Seater Dark Mahogany Rectangular Dining Table with Slat-Back Chairs", dtDarkMahoganyRectSlat, "dining-tables", markUp(53000, 10), 53000, 4.5, ["new"]),
+    attributes: diningTableSpecs("6 Persons", "Dark Mahogany with Black Leather Cushioned Slat-Back Chairs"), colors: ["#4A2418", "#1A1A1A", "#5A3A2A"] },
+  { ...make("dt-38", "6 Seater Dark Espresso Dining Table with Carved Cross Chevron Chairs", dtDarkEspressoCrossChevron, "dining-tables", markUp(54000, 10), 54000, 5, ["top", "featured"], true),
+    attributes: diningTableSpecs("6 Persons", "Dark Espresso with Carved Cross-Back & Chevron Cushioned Chairs"), colors: ["#2A1812", "#D97A2A", "#1A1A1A"] },
 ];
 
 products.push(...diningTableProducts);
