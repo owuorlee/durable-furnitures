@@ -18,7 +18,6 @@ const categories = [
   { name: "Coffee Tables", image: catCoffeeTable },
   { name: "TV Stands", image: catTvStand },
   { name: "Chester Seats", image: catChesterSeat },
-  { name: "Dining Tables", image: catDiningSet },
   { name: "Dining Sets", image: catDiningSet },
 ];
 
