@@ -132,6 +132,15 @@ import dtMahoganyOvalCarvedZigzag from "@/assets/dining-mahogany-oval-carved-zig
 import dtMahoganyOvalLadderback from "@/assets/dining-mahogany-oval-ladderback-6seat.png";
 import dtDarkMahoganyRectSlat from "@/assets/dining-dark-mahogany-rect-slat-6seat.png";
 import dtDarkEspressoCrossChevron from "@/assets/dining-dark-espresso-cross-chevron-6seat.png";
+import csCreamWingbackPair from "@/assets/chester-cream-tufted-wingback-pair.png";
+import csTealSet from "@/assets/chester-teal-tufted-5seater-set.png";
+import csEmeraldSet from "@/assets/chester-emerald-velvet-4seater-set.png";
+import csBurntOrangeSet from "@/assets/chester-burnt-orange-velvet-5seater-set.png";
+import csCreamSet from "@/assets/chester-cream-tufted-5seater-set.png";
+import csBlushBeigeYellow from "@/assets/chester-blush-beige-7seater-yellow-wingback.png";
+import csRoyalBlueSet from "@/assets/chester-royal-blue-velvet-5seater-set.png";
+import csEmeraldGoldSet from "@/assets/chester-emerald-gold-accent-6seater-set.png";
+import csBeigeWingback from "@/assets/chester-beige-tufted-wingback-1seater.png";
 
 export type Product = {
   id: string;
@@ -561,6 +570,38 @@ const diningTableProducts: Product[] = [
 ];
 
 products.push(...diningTableProducts);
+
+const chesterSeatSpecs = (capacity: string, color: string) => [
+  { label: "Material", value: "Premium fabric upholstery, solid wood frame" },
+  { label: "Seating Capacity", value: capacity },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Kiln-dried hardwood frame" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const chesterSeatProducts: Product[] = [
+  { ...make("cs-1", "2 Seater Cream Tufted Wingback Chester Chair Set", csCreamWingbackPair, "chester-seats", markUp(40000, 10), 40000, 5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("2 Seater (Pair of Wingbacks)", "Cream / Ivory"), colors: ["#EDE3D2", "#1A1A1A", "#B8A99A"] },
+  { ...make("cs-2", "5 Seater Teal Green Tufted Chesterfield Sofa Set", csTealSet, "chester-seats", markUp(55000, 10), 55000, 5, ["new", "featured"], true),
+    attributes: chesterSeatSpecs("5 Seater (3+1+1)", "Teal Green"), colors: ["#2F6E6A", "#1A1A1A", "#B8A99A"] },
+  { ...make("cs-3", "4 Seater Emerald Green Velvet Chesterfield Set", csEmeraldSet, "chester-seats", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("4 Seater (3+1)", "Emerald Green Velvet"), colors: ["#0E5A4A", "#F1C40F", "#1A1A1A"] },
+  { ...make("cs-4", "5 Seater Burnt Orange Velvet Chesterfield Sofa Set", csBurntOrangeSet, "chester-seats", markUp(48000, 10), 48000, 4.5, ["new"]),
+    attributes: chesterSeatSpecs("5 Seater (3+2)", "Burnt Orange Velvet"), colors: ["#C0562B", "#F4F1EA", "#1A1A1A"] },
+  { ...make("cs-5", "5 Seater Cream Tufted Chesterfield Sofa Set", csCreamSet, "chester-seats", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("5 Seater (3+2)", "Cream / Ivory"), colors: ["#EDE3D2", "#B8A99A", "#1A1A1A"] },
+  { ...make("cs-6", "7 Seater Blush Beige Chesterfield Set with Yellow Wingback", csBlushBeigeYellow, "chester-seats", markUp(70000, 10), 70000, 5, ["top", "featured"], true),
+    attributes: chesterSeatSpecs("7 Seater (3+3+1 Wingback)", "Blush Beige with Yellow Wingback Accent"), colors: ["#D9C3B0", "#F1C40F", "#1A1A1A"] },
+  { ...make("cs-7", "5 Seater Royal Blue Velvet Chesterfield Sofa Set", csRoyalBlueSet, "chester-seats", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("5 Seater (3+2)", "Royal Blue Velvet"), colors: ["#1F4E8C", "#E63946", "#F1C40F"] },
+  { ...make("cs-8", "6 Seater Emerald Green Velvet Chesterfield Set with Gold Accents", csEmeraldGoldSet, "chester-seats", markUp(75000, 10), 75000, 5, ["top", "featured"], true),
+    attributes: chesterSeatSpecs("6 Seater (3+2+1)", "Emerald Green Velvet with Gold Accents"), colors: ["#0E5A4A", "#C9A96E", "#1A1A1A"] },
+  { ...make("cs-9", "1 Seater Beige Tufted Wingback Chester Chair", csBeigeWingback, "chester-seats", markUp(20000, 10), 20000, 4.5, ["new"]),
+    attributes: chesterSeatSpecs("1 Seater", "Beige / Oat"), colors: ["#D9C3B0", "#1A1A1A", "#B8A99A"] },
+];
+
+products.push(...chesterSeatProducts);
 
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
