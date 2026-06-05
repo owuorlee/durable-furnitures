@@ -141,6 +141,15 @@ import csBlushBeigeYellow from "@/assets/chester-blush-beige-7seater-yellow-wing
 import csRoyalBlueSet from "@/assets/chester-royal-blue-velvet-5seater-set.png";
 import csEmeraldGoldSet from "@/assets/chester-emerald-gold-accent-6seater-set.png";
 import csBeigeWingback from "@/assets/chester-beige-tufted-wingback-1seater.png";
+import csGreyTuftedSetV2 from "@/assets/chester-grey-tufted-5seater-set-v2.png";
+import csRustBrownLoveseat from "@/assets/chester-rust-brown-tufted-2seater.png";
+import csIvoryChannelSet from "@/assets/chester-ivory-channel-sofa-set-5seater.png";
+import csMustardWingback from "@/assets/chester-mustard-tufted-wingback-1seater.png";
+import csMustardWingbackPairV2 from "@/assets/chester-mustard-tufted-wingback-pair-v2.png";
+import csBeigeWingbackV2 from "@/assets/chester-beige-wingback-1seater-v2.png";
+import csBlueTuftedSetV2 from "@/assets/chester-blue-tufted-5seater-set-v2.png";
+import csGoldWingback from "@/assets/chester-gold-tufted-wingback-1seater.png";
+import csCreamChannelSet from "@/assets/chester-cream-channel-sofa-set-5seater.png";
 
 export type Product = {
   id: string;
@@ -599,6 +608,24 @@ const chesterSeatProducts: Product[] = [
     attributes: chesterSeatSpecs("6 Seater (3+2+1)", "Emerald Green Velvet with Gold Accents"), colors: ["#0E5A4A", "#C9A96E", "#1A1A1A"] },
   { ...make("cs-9", "1 Seater Beige Tufted Wingback Chester Chair", csBeigeWingback, "chester-seats", markUp(20000, 10), 20000, 4.5, ["new"]),
     attributes: chesterSeatSpecs("1 Seater", "Beige / Oat"), colors: ["#D9C3B0", "#1A1A1A", "#B8A99A"] },
+  { ...make("cs-10", "5 Seater Warm Grey Tufted Chesterfield Sofa Set", csGreyTuftedSetV2, "chester-seats", markUp(50000, 10), 50000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("5 Seater (3+1+1)", "Warm Grey / Taupe"), colors: ["#8E857F", "#F1C40F", "#1A1A1A"] },
+  { ...make("cs-11", "2 Seater Rust Brown Tufted Chester Loveseat", csRustBrownLoveseat, "chester-seats", markUp(60000, 10), 60000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("2 Seater", "Rust Brown / Cognac"), colors: ["#8B4A2B", "#C9A96E", "#1A1A1A"] },
+  { ...make("cs-12", "5 Seater Ivory Channel Chester Sofa Set", csIvoryChannelSet, "chester-seats", markUp(20000, 10), 20000, 4.5, ["new"]),
+    attributes: chesterSeatSpecs("5 Seater (3+2)", "Ivory / Pearl White"), colors: ["#EEE7DA", "#C9A96E", "#1A1A1A"] },
+  { ...make("cs-13", "1 Seater Mustard Tufted Wingback Chester Chair", csMustardWingback, "chester-seats", markUp(40000, 10), 40000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("1 Seater", "Mustard Yellow"), colors: ["#D8A300", "#C9A96E", "#1A1A1A"] },
+  { ...make("cs-14", "2 Seater Mustard Tufted Wingback Chester Chair Set", csMustardWingbackPairV2, "chester-seats", markUp(20000, 10), 20000, 4.5, ["new"]),
+    attributes: chesterSeatSpecs("2 Seater (Pair of Wingbacks)", "Mustard Gold"), colors: ["#B89A2F", "#1A1A1A", "#B8A99A"] },
+  { ...make("cs-15", "1 Seater Beige Wingback Chester Chair", csBeigeWingbackV2, "chester-seats", markUp(55000, 10), 55000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("1 Seater", "Beige / Sand"), colors: ["#B9A56B", "#6B4423", "#1A1A1A"] },
+  { ...make("cs-16", "5 Seater Blue Tufted Chesterfield Sofa Set", csBlueTuftedSetV2, "chester-seats", markUp(20000, 10), 20000, 4.5, ["new"]),
+    attributes: chesterSeatSpecs("5 Seater (3+2)", "Steel Blue with Yellow Accent Cushions"), colors: ["#4E6B8A", "#F1C40F", "#1A1A1A"] },
+  { ...make("cs-17", "1 Seater Gold Tufted Wingback Chester Chair", csGoldWingback, "chester-seats", markUp(60000, 10), 60000, 4.5, ["new", "featured"]),
+    attributes: chesterSeatSpecs("1 Seater", "Gold / Mustard Velvet"), colors: ["#D6A319", "#1A1A1A", "#B8A99A"] },
+  { ...make("cs-18", "5 Seater Cream Channel Chester Sofa Set", csCreamChannelSet, "chester-seats", markUp(65000, 10), 65000, 5, ["top", "featured"], true),
+    attributes: chesterSeatSpecs("5 Seater (3+2)", "Cream / Ivory"), colors: ["#F0E8DA", "#C9A96E", "#1A1A1A"] },
 ];
 
 products.push(...chesterSeatProducts);
