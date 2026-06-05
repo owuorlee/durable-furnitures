@@ -141,6 +141,15 @@ import csBlushBeigeYellow from "@/assets/chester-blush-beige-7seater-yellow-wing
 import csRoyalBlueSet from "@/assets/chester-royal-blue-velvet-5seater-set.png";
 import csEmeraldGoldSet from "@/assets/chester-emerald-gold-accent-6seater-set.png";
 import csBeigeWingback from "@/assets/chester-beige-tufted-wingback-1seater.png";
+import csGreyTuftedSetV2 from "@/assets/chester-grey-tufted-5seater-set-v2.png";
+import csRustBrownLoveseat from "@/assets/chester-rust-brown-tufted-2seater.png";
+import csIvoryChannelSet from "@/assets/chester-ivory-channel-sofa-set-5seater.png";
+import csMustardWingback from "@/assets/chester-mustard-tufted-wingback-1seater.png";
+import csMustardWingbackPairV2 from "@/assets/chester-mustard-tufted-wingback-pair-v2.png";
+import csBeigeWingbackV2 from "@/assets/chester-beige-wingback-1seater-v2.png";
+import csBlueTuftedSetV2 from "@/assets/chester-blue-tufted-5seater-set-v2.png";
+import csGoldWingback from "@/assets/chester-gold-tufted-wingback-1seater.png";
+import csCreamChannelSet from "@/assets/chester-cream-channel-sofa-set-5seater.png";
 
 export type Product = {
   id: string;
