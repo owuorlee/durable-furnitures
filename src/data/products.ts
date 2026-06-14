@@ -150,6 +150,15 @@ import csBeigeWingbackV2 from "@/assets/chester-beige-wingback-1seater-v2.png";
 import csBlueTuftedSetV2 from "@/assets/chester-blue-tufted-5seater-set-v2.png";
 import csGoldWingback from "@/assets/chester-gold-tufted-wingback-1seater.png";
 import csCreamChannelSet from "@/assets/chester-cream-channel-sofa-set-5seater.png";
+import tvWhiteFlutedGoldKnob from "@/assets/tv-stand-white-fluted-gold-knob.png";
+import tvMinimalWhite4Door from "@/assets/tv-stand-minimal-white-4door.png";
+import tvWhiteSlatBrownTop from "@/assets/tv-stand-white-slat-brown-top.png";
+import tvWhiteOpenShelfGoldHandle from "@/assets/tv-stand-white-open-shelf-gold-handle.png";
+import tvWhiteSlatBrownTopDrawer from "@/assets/tv-stand-white-slat-brown-top-drawer.png";
+import tvWhiteFlutedBlackFrame from "@/assets/tv-stand-white-fluted-black-frame.png";
+import tvLilacGoldGeometric from "@/assets/tv-stand-lilac-gold-geometric.png";
+import tvWhiteGreyBlackBlock from "@/assets/tv-stand-white-grey-black-block.png";
+
 
 export type Product = {
   id: string;
@@ -489,7 +498,38 @@ const woodenBedProducts: Product[] = [
 
 products.push(...woodenBedProducts);
 
+const tvStandSpecs = (size: string, color: string, material = "High gloss MDF board, metal legs") => [
+  { label: "Material", value: material },
+  { label: "Size", value: size },
+  { label: "Color", value: color },
+  { label: "Frame", value: "Engineered wood body with reinforced base" },
+  { label: "Warranty", value: "5 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const tvStandProducts: Product[] = [
+  { ...make("tv-1", "Large White Fluted TV Stand with Gold Knobs", tvWhiteFlutedGoldKnob, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "Gloss White with Gold Knobs", "High gloss MDF board, fluted center panel"), colors: ["#F6F4EE", "#C9A96E", "#D9D4CC"] },
+  { ...make("tv-2", "Minimal White 4-Door TV Stand", tvMinimalWhite4Door, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: tvStandSpecs("180cm x 40cm x 55cm", "Matte White", "MDF board with smooth painted finish"), colors: ["#F5F5F0", "#D9D9D4", "#B8A99A"] },
+  { ...make("tv-3", "White Slatted TV Stand with Brown Top", tvWhiteSlatBrownTop, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "White with Walnut Brown Top", "MDF board, slatted side panels, tapered legs"), colors: ["#F4F1EA", "#8A5A3B", "#1A1A1A"] },
+  { ...make("tv-4", "Modern White TV Stand with Open Shelves and Gold Handles", tvWhiteOpenShelfGoldHandle, "tv-stands", markUp(16000, 10), 16000, 4.5, ["new"]),
+    attributes: tvStandSpecs("160cm x 40cm x 50cm", "White with Gold Handles", "Painted MDF board, open shelving, wooden legs"), colors: ["#F5F2EC", "#C9A96E", "#B8A99A"] },
+  { ...make("tv-5", "White Slatted TV Stand with Walnut Top and Center Drawer", tvWhiteSlatBrownTopDrawer, "tv-stands", markUp(16000, 10), 16000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("160cm x 40cm x 50cm", "White with Walnut Top", "MDF board, slatted side panels, wood-finish top"), colors: ["#F4F1EA", "#7A4A2A", "#C9A96E"] },
+  { ...make("tv-6", "White Fluted TV Stand with Black Metal Side Legs", tvWhiteFlutedBlackFrame, "tv-stands", markUp(20000, 10), 20000, 5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 55cm", "White with Black Frame", "Fluted MDF board, black powder-coated metal legs"), colors: ["#F3F1EA", "#1A1A1A", "#B8A99A"] },
+  { ...make("tv-7", "Lilac and Gold Geometric TV Stand", tvLilacGoldGeometric, "tv-stands", markUp(20000, 10), 20000, 5, ["top", "featured"], true),
+    attributes: tvStandSpecs("160cm x 40cm x 55cm", "Lilac with Gold Trim", "Gloss MDF board, gold-finish metal accents"), colors: ["#C9BDD9", "#C9A96E", "#F1EAF7"] },
+  { ...make("tv-8", "Modern White Grey and Black TV Stand with Open Shelves", tvWhiteGreyBlackBlock, "tv-stands", markUp(16000, 10), 16000, 4.5, ["new"]),
+    attributes: tvStandSpecs("160cm x 40cm x 55cm", "White, Grey and Black", "MDF board with mixed-tone cabinet fronts"), colors: ["#F4F1EA", "#6D7075", "#1A1A1A"] },
+];
+
+products.push(...tvStandProducts);
+
 // Dining Tables — client photos. Sale prices set per image; original auto marked up ~10%.
+
 const diningTableSpecs = (seats: string, color: string) => [
   { label: "Material", value: "Solid hardwood, high-gloss finish" },
   { label: "Seating Capacity", value: seats },
