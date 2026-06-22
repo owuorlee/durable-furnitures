@@ -158,6 +158,14 @@ import tvWhiteSlatBrownTopDrawer from "@/assets/tv-stand-white-slat-brown-top-dr
 import tvWhiteFlutedBlackFrame from "@/assets/tv-stand-white-fluted-black-frame.png";
 import tvLilacGoldGeometric from "@/assets/tv-stand-lilac-gold-geometric.png";
 import tvWhiteGreyBlackBlock from "@/assets/tv-stand-white-grey-black-block.png";
+import tvWhiteChevronGoldHandle from "@/assets/tv-stand-white-chevron-gold-handle-2drawer.png";
+import tvOvalWhiteGoldFluted from "@/assets/tv-stand-oval-white-gold-fluted-6drawer.png";
+import tvGreyWhiteDiamondFluted from "@/assets/tv-stand-grey-white-diamond-fluted-2drawer.png";
+import tvWhiteFlutedGoldKnobTall from "@/assets/tv-stand-white-fluted-gold-knob-tall.png";
+import tvWhiteRibbedGoldRing from "@/assets/tv-stand-white-ribbed-gold-ring-openshelf.png";
+import tvGreyDiamond4Door from "@/assets/tv-stand-grey-diamond-4door-2drawer.png";
+import tvWhiteDiamondBlackFrame from "@/assets/tv-stand-white-diamond-2drawer-blackframe.png";
+import tvWhiteFlutedRedLeg from "@/assets/tv-stand-white-fluted-gold-handle-redleg.png";
 
 
 export type Product = {
