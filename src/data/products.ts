@@ -532,6 +532,22 @@ const tvStandProducts: Product[] = [
     attributes: tvStandSpecs("160cm x 40cm x 55cm", "Lilac with Gold Trim", "Gloss MDF board, gold-finish metal accents"), colors: ["#C9BDD9", "#C9A96E", "#F1EAF7"] },
   { ...make("tv-8", "Modern White Grey and Black TV Stand with Open Shelves", tvWhiteGreyBlackBlock, "tv-stands", markUp(16000, 10), 16000, 4.5, ["new"]),
     attributes: tvStandSpecs("160cm x 40cm x 55cm", "White, Grey and Black", "MDF board with mixed-tone cabinet fronts"), colors: ["#F4F1EA", "#6D7075", "#1A1A1A"] },
+  { ...make("tv-9", "Large White Chevron Fluted TV Stand with Gold Handles", tvWhiteChevronGoldHandle, "tv-stands", markUp(25000, 10), 25000, 5, ["new", "featured"]),
+    attributes: tvStandSpecs("200cm x 40cm x 55cm", "Gloss White with Gold Handles", "High gloss MDF board, chevron fluted doors, gold metal legs"), colors: ["#F6F4EE", "#C9A96E", "#D9D4CC"] },
+  { ...make("tv-10", "Oval White and Gold Fluted 6-Drawer TV Console", tvOvalWhiteGoldFluted, "tv-stands", markUp(28000, 10), 28000, 5, ["new", "top", "featured"]),
+    attributes: tvStandSpecs("210cm x 45cm x 75cm", "Gloss White with Gold Trim", "High gloss MDF board, rounded oval ends, gold-finish base and accents"), colors: ["#F6F4EE", "#C9A96E", "#EFE9DC"] },
+  { ...make("tv-11", "Grey and White Diamond Fluted TV Stand with Gold Legs", tvGreyWhiteDiamondFluted, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 55cm", "Light Grey with Diamond Texture", "MDF board, diamond pattern doors, fluted drawers, gold tapered legs"), colors: ["#D9D4CC", "#C9A96E", "#F4F1EA"] },
+  { ...make("tv-12", "Tall White Fluted TV Sideboard with Gold Knobs", tvWhiteFlutedGoldKnobTall, "tv-stands", markUp(25000, 10), 25000, 5, ["new", "featured"]),
+    attributes: tvStandSpecs("200cm x 45cm x 70cm", "Matte White with Gold Knobs", "Fluted MDF board, gold-finish metal knobs and tapered legs"), colors: ["#F4F1EA", "#C9A96E", "#E8E4DC"] },
+  { ...make("tv-13", "White Ribbed TV Stand with Gold Ring Handles", tvWhiteRibbedGoldRing, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "Gloss White with Gold Ring Handles", "Vertical ribbed MDF board, gold-finish circular ring handles, open center shelf"), colors: ["#F6F4EE", "#C9A96E", "#E8E4DC"] },
+  { ...make("tv-14", "Grey Diamond Pattern 4-Door TV Stand with Drawers", tvGreyDiamond4Door, "tv-stands", markUp(20000, 10), 20000, 5, ["new", "featured"]),
+    attributes: tvStandSpecs("200cm x 45cm x 55cm", "Light Grey with Diamond Doors", "MDF board, diamond-quilted side cabinets, fluted center drawers, black metal feet"), colors: ["#C9C4BC", "#8A8580", "#1A1A1A"] },
+  { ...make("tv-15", "Modern White Diamond Quilted TV Stand with Black Frame Base", tvWhiteDiamondBlackFrame, "tv-stands", markUp(20000, 10), 20000, 5, ["top", "featured"], true),
+    attributes: tvStandSpecs("200cm x 45cm x 55cm", "Matte White with Black Frame", "MDF board, diamond-quilted door, fluted center drawers, black powder-coated metal base"), colors: ["#F4F1EA", "#1A1A1A", "#C9C4BC"] },
+  { ...make("tv-16", "White Fluted TV Stand with Gold Handle and Open Center Shelf", tvWhiteFlutedRedLeg, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: tvStandSpecs("200cm x 45cm x 55cm", "Gloss White with Gold Handles", "Vertical fluted MDF board, gold-finish bar handles, open center shelf, wooden feet"), colors: ["#F6F4EE", "#C9A96E", "#8A5A3B"] },
 ];
 
 products.push(...tvStandProducts);
