@@ -556,6 +556,22 @@ const tvStandProducts: Product[] = [
     attributes: tvStandSpecs("200cm x 45cm x 55cm", "Matte White with Black Frame", "MDF board, diamond-quilted door, fluted center drawers, black powder-coated metal base"), colors: ["#F4F1EA", "#1A1A1A", "#C9C4BC"] },
   { ...make("tv-16", "White Fluted TV Stand with Gold Handle and Open Center Shelf", tvWhiteFlutedRedLeg, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
     attributes: tvStandSpecs("200cm x 45cm x 55cm", "Gloss White with Gold Handles", "Vertical fluted MDF board, gold-finish bar handles, open center shelf, wooden feet"), colors: ["#F6F4EE", "#C9A96E", "#8A5A3B"] },
+  { ...make("tv-17", "White Curved TV Stand with Smoked Glass Panels", tvWhiteCurvedSmokePanel, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 55cm", "Soft White with Smoked Black Panels", "Painted MDF board, curved edge top, smoked acrylic panel doors, gold-tone feet"), colors: ["#F2F0EA", "#2F3136", "#C9A96E"] },
+  { ...make("tv-18", "Modern White TV Stand with Walnut Floating Shelf", tvWhiteWalnutFloatingShelf, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "White with Walnut Brown Shelf and Base", "Gloss MDF board, raised walnut-finish top shelf, low-profile wooden base"), colors: ["#F4F4F1", "#6B3F2A", "#B8A99A"] },
+  { ...make("tv-19", "White Slatted TV Stand with Walnut Top and Open Drawer", tvWhiteSlatWalnutTopDrawer, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("190cm x 40cm x 55cm", "White with Walnut Brown Top", "MDF board, stacked slatted side detailing, center drawer, open shelves"), colors: ["#F3F1EA", "#7A4A2A", "#C9A96E"] },
+  { ...make("tv-20", "Scandinavian White TV Stand with Open Shelves and Drawers", tvWhiteScandinavianOpenShelf, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "Matte White with Natural Wood Legs", "MDF board, open shelving, side cabinet, two drawers, tapered wooden legs"), colors: ["#F6F4EE", "#C9A96E", "#D9D4CC"] },
+  { ...make("tv-21", "White Curved Fluted TV Stand with Geometric Doors", tvWhiteCurvedFlutedGeometric, "tv-stands", markUp(17000, 10), 17000, 5, ["new", "featured"]),
+    attributes: tvStandSpecs("200cm x 45cm x 60cm", "Gloss White", "High gloss MDF board, curved fluted ends, geometric line doors, chrome wire legs"), colors: ["#F5F3ED", "#BFC3C8", "#D9D4CC"] },
+  { ...make("tv-22", "Minimal White TV Stand with Open Center Niche", tvWhiteMinimalOpenCenter, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: tvStandSpecs("200cm x 40cm x 55cm", "Matte White", "Painted MDF board, open center niche, side storage cabinets, low pedestal base"), colors: ["#F1EFE8", "#D9D4CC", "#B8A99A"] },
+  { ...make("tv-23", "White Fluted TV Sideboard with Gold Knobs and Center Drawers", tvWhiteFlutedGold3Drawer, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("190cm x 45cm x 60cm", "White with Gold Knobs", "Fluted MDF board, double-door cabinets, three center drawers, gold-tone legs"), colors: ["#F5F3ED", "#C9A96E", "#E8E4DC"] },
+  { ...make("tv-24", "White Open Shelf TV Stand with Two Drawers", tvWhiteOpenShelf2Drawer, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "Matte White", "Painted MDF board, twin center drawers, open side shelves, straight legs"), colors: ["#F3F1EA", "#D9D4CC", "#B8A99A"] },
 ];
 
 products.push(...tvStandProducts);
