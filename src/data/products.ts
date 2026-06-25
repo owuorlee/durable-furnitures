@@ -580,6 +580,22 @@ const tvStandProducts: Product[] = [
     attributes: tvStandSpecs("190cm x 45cm x 60cm", "White with Gold Knobs", "Fluted MDF board, double-door cabinets, three center drawers, gold-tone legs"), colors: ["#F5F3ED", "#C9A96E", "#E8E4DC"] },
   { ...make("tv-24", "White Open Shelf TV Stand with Two Drawers", tvWhiteOpenShelf2Drawer, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
     attributes: tvStandSpecs("180cm x 40cm x 50cm", "Matte White", "Painted MDF board, twin center drawers, open side shelves, straight legs"), colors: ["#F3F1EA", "#D9D4CC", "#B8A99A"] },
+  { ...make("tv-25", "White Diamond Panel TV Stand with Center Drawers", tvWhiteDiamondPanel2Drawer, "tv-stands", markUp(19000, 10), 19000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 55cm", "Matte White with Black Pull Handles", "Painted MDF board, diamond-textured side doors, ribbed center drawers, raised black legs"), colors: ["#F5F4F0", "#1F1F1F", "#D8D3CB"] },
+  { ...make("tv-26", "Modern White Geometric TV Stand with Gold Handles", tvWhiteGeometricGoldHandle2Drawer, "tv-stands", markUp(20000, 10), 20000, 4.5, ["new"]),
+    attributes: tvStandSpecs("200cm x 40cm x 50cm", "Gloss White with Gold Handles", "High gloss MDF board, geometric line doors, center drawers, gold-tone metal legs"), colors: ["#F7F5F0", "#C9A96E", "#DDD8CF"] },
+  { ...make("tv-27", "White Curved TV Console with Gold Line Detail", tvWhiteCurvedGoldLineConsole, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("180cm x 40cm x 55cm", "Soft White with Gold Trim", "Painted MDF board, curved fluted end, center shelf, gold accent lines and wire legs"), colors: ["#F4F2EC", "#C9A96E", "#E7E1D6"] },
+  { ...make("tv-28", "White Fluted TV Stand with Open Shelf and Wine Rack", tvWhiteFlutedWineRackConsole, "tv-stands", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: tvStandSpecs("180cm x 40cm x 50cm", "Matte White", "MDF board, fluted sliding door, open media shelf, angled bottle rack storage"), colors: ["#F4F3EE", "#D9D4CC", "#B7B1A7"] },
+  { ...make("tv-29", "Walnut and White Open Shelf TV Console", tvWalnutWhiteOpenShelfConsole, "tv-stands", markUp(16000, 10), 16000, 4.5, ["new"]),
+    attributes: tvStandSpecs("200cm x 40cm x 50cm", "Walnut Brown and White", "Wood-look MDF board, open shelving, side cabinets, tapered wooden legs"), colors: ["#6E4A32", "#F5F4EF", "#C9A96E"] },
+  { ...make("tv-30", "White Curved Gold Line TV Stand with Side Wine Rack", tvWhiteCurvedGoldLineConsoleWrapped, "tv-stands", markUp(25000, 10), 25000, 5, ["new", "top", "featured"]),
+    attributes: tvStandSpecs("200cm x 45cm x 55cm", "Gloss White with Gold Detail", "High gloss MDF board, curved fluted ends, center drawers, side display rack, gold metal legs"), colors: ["#F6F3ED", "#C9A96E", "#E5DED2"] },
+  { ...make("tv-31", "White Diamond Pattern TV Stand with Gold Trim", tvWhiteDiamondGoldTrimConsole, "tv-stands", markUp(20000, 10), 20000, 4.5, ["new", "featured"]),
+    attributes: tvStandSpecs("190cm x 40cm x 55cm", "White with Gold Trim", "Painted MDF board, diamond-pattern cabinet fronts, open center shelf, gold-tone handles and legs"), colors: ["#F7F5F1", "#C9A96E", "#DFD9D0"] },
+  { ...make("tv-32", "White Fluted Curved TV Console with Open Shelf", tvWhiteFlutedCurvedOpenShelfConsole, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
+    attributes: tvStandSpecs("190cm x 40cm x 55cm", "Soft White with Gold Trim", "Fluted MDF board, curved end panels, open center shelf, drawer storage, gold-tone legs"), colors: ["#F5F3EE", "#C9A96E", "#D9D4CC"] },
 ];
 
 products.push(...tvStandProducts);
