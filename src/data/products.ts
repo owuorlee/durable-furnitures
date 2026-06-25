@@ -174,6 +174,14 @@ import tvWhiteCurvedFlutedGeometric from "@/assets/tv-stand-white-curved-fluted-
 import tvWhiteMinimalOpenCenter from "@/assets/tv-stand-white-minimal-open-center.png";
 import tvWhiteFlutedGold3Drawer from "@/assets/tv-stand-white-fluted-gold-3drawer.png";
 import tvWhiteOpenShelf2Drawer from "@/assets/tv-stand-white-open-shelf-2drawer.png";
+import tvWhiteDiamondPanel2Drawer from "@/assets/tv-stand-white-diamond-panel-2drawer.png";
+import tvWhiteGeometricGoldHandle2Drawer from "@/assets/tv-stand-white-geometric-gold-handle-2drawer.png";
+import tvWhiteCurvedGoldLineConsole from "@/assets/tv-stand-white-curved-gold-line-console.png";
+import tvWhiteFlutedWineRackConsole from "@/assets/tv-stand-white-fluted-wine-rack-console.png";
+import tvWalnutWhiteOpenShelfConsole from "@/assets/tv-stand-walnut-white-open-shelf-console.png";
+import tvWhiteCurvedGoldLineConsoleWrapped from "@/assets/tv-stand-white-curved-gold-line-console-wrapped.png";
+import tvWhiteDiamondGoldTrimConsole from "@/assets/tv-stand-white-diamond-gold-trim-console.png";
+import tvWhiteFlutedCurvedOpenShelfConsole from "@/assets/tv-stand-white-fluted-curved-open-shelf-console.png";
 
 
 export type Product = {
