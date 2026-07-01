@@ -190,6 +190,14 @@ import tvWhiteFlutedOvalMediaConsole from "@/assets/tv-stand-white-fluted-oval-m
 import tvWhiteFlutedOpenCenterConsole from "@/assets/tv-stand-white-fluted-open-center-console.png.asset.json";
 import tvWhiteGoldDiamondPatternConsole from "@/assets/tv-stand-white-gold-diamond-pattern-console.png.asset.json";
 import tvWhiteWrappedGoldLineConsole from "@/assets/tv-stand-white-wrapped-gold-line-console.png.asset.json";
+import ctBlackGlassWhiteBase from "@/assets/ct-black-glass-white-base.jpg.asset.json";
+import ctWhiteGreyMarbleDrawer from "@/assets/ct-white-grey-marble-drawer.jpg.asset.json";
+import ctWhiteGoldMarbleTiered from "@/assets/ct-white-gold-marble-tiered.jpg.asset.json";
+import ctWhiteHighglossTwoTier from "@/assets/ct-white-highgloss-two-tier.jpg.asset.json";
+import ctWhiteMinimalistTwoTier from "@/assets/ct-white-minimalist-two-tier.jpg.asset.json";
+import ctWhiteBlackMarbleGoldTrim from "@/assets/ct-white-black-marble-gold-trim.jpg.asset.json";
+import ctWhiteGoldMarbleDrawer from "@/assets/ct-white-gold-marble-drawer.jpg.asset.json";
+import ctWhiteGoldMarbleWrapped from "@/assets/ct-white-gold-marble-wrapped.jpg.asset.json";
 
 
 export type Product = {
