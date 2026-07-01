@@ -190,6 +190,14 @@ import tvWhiteFlutedOvalMediaConsole from "@/assets/tv-stand-white-fluted-oval-m
 import tvWhiteFlutedOpenCenterConsole from "@/assets/tv-stand-white-fluted-open-center-console.png.asset.json";
 import tvWhiteGoldDiamondPatternConsole from "@/assets/tv-stand-white-gold-diamond-pattern-console.png.asset.json";
 import tvWhiteWrappedGoldLineConsole from "@/assets/tv-stand-white-wrapped-gold-line-console.png.asset.json";
+import ctBlackGlassWhiteBase from "@/assets/ct-black-glass-white-base.jpg.asset.json";
+import ctWhiteGreyMarbleDrawer from "@/assets/ct-white-grey-marble-drawer.jpg.asset.json";
+import ctWhiteGoldMarbleTiered from "@/assets/ct-white-gold-marble-tiered.jpg.asset.json";
+import ctWhiteHighglossTwoTier from "@/assets/ct-white-highgloss-two-tier.jpg.asset.json";
+import ctWhiteMinimalistTwoTier from "@/assets/ct-white-minimalist-two-tier.jpg.asset.json";
+import ctWhiteBlackMarbleGoldTrim from "@/assets/ct-white-black-marble-gold-trim.jpg.asset.json";
+import ctWhiteGoldMarbleDrawer from "@/assets/ct-white-gold-marble-drawer.jpg.asset.json";
+import ctWhiteGoldMarbleWrapped from "@/assets/ct-white-gold-marble-wrapped.jpg.asset.json";
 
 
 export type Product = {
@@ -765,6 +773,37 @@ const chesterSeatProducts: Product[] = [
 ];
 
 products.push(...chesterSeatProducts);
+
+const coffeeTableSpecs = (size: string, color: string, material: string) => [
+  { label: "Material", value: material },
+  { label: "Size", value: size },
+  { label: "Color", value: color },
+  { label: "Finish", value: "High-gloss polished finish" },
+  { label: "Warranty", value: "2 Years Structural" },
+  { label: "Made In", value: "Nairobi, Kenya" },
+];
+
+const coffeeTableProducts: Product[] = [
+  { ...make("ct-1", "Rectangular Black Glass Top Coffee Table with White Base and Drawer", ctBlackGlassWhiteBase.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
+    attributes: coffeeTableSpecs("120cm x 60cm x 45cm", "White with Black Glass", "Tempered black glass top, high-gloss MDF base with drawer and side cabinet"), colors: ["#F5F3EE", "#0E0E0E", "#C0C0C0"] },
+  { ...make("ct-2", "White and Grey Coffee Table with Gold Marble Top", ctWhiteGreyMarbleDrawer.url, "coffee-tables", markUp(16000, 10), 16000, 4.5, ["new"]),
+    attributes: coffeeTableSpecs("110cm x 55cm x 45cm", "White and Charcoal Grey with Marble", "Faux gold-vein marble top, MDF board frame, cabinet and drawer storage, gold knobs"), colors: ["#F4F1EA", "#4A4A4A", "#C9A96E"] },
+  { ...make("ct-3", "White and Gold Marble Tiered Coffee Table with Drawers", ctWhiteGoldMarbleTiered.url, "coffee-tables", markUp(16000, 10), 16000, 4.5, ["new", "featured"]),
+    attributes: coffeeTableSpecs("120cm x 60cm x 50cm", "White with Gold Marble Top", "Faux marble top with gold trim, tiered MDF base, diamond-textured drawers"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
+  { ...make("ct-4", "Modern White High-Gloss Two-Tier Coffee Table", ctWhiteHighglossTwoTier.url, "coffee-tables", markUp(15000, 10), 15000, 4.5, ["new"]),
+    attributes: coffeeTableSpecs("120cm x 65cm x 40cm", "Pure White High Gloss", "High-gloss lacquered MDF, floating two-tier design"), colors: ["#FFFFFF", "#F4F1EA", "#E7E1D6"] },
+  { ...make("ct-5", "White Minimalist Two-Tier Coffee Table with Open Shelf", ctWhiteMinimalistTwoTier.url, "coffee-tables", markUp(15000, 10), 15000, 4.5, ["new"]),
+    attributes: coffeeTableSpecs("120cm x 60cm x 40cm", "Matte White", "Painted MDF board, two-tier staggered top with open lower shelf"), colors: ["#F7F5F0", "#EDE9E1", "#DDD8CF"] },
+  { ...make("ct-6", "White Coffee Table with Black Marble Top and Gold Trim", ctWhiteBlackMarbleGoldTrim.url, "coffee-tables", markUp(18000, 10), 18000, 5, ["top", "featured"], true),
+    attributes: coffeeTableSpecs("120cm x 60cm x 45cm", "White with Black Marble and Gold Accent", "Faux black marble top, high-gloss white MDF base, gold trim detail"), colors: ["#F5F3EE", "#0E0E0E", "#C9A96E"] },
+  { ...make("ct-7", "White and Gold Marble Coffee Table with Gold Drawer", ctWhiteGoldMarbleDrawer.url, "coffee-tables", markUp(18000, 10), 18000, 5, ["new", "featured"]),
+    attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Gold Marble Top", "Faux gold-vein marble top with rounded corners, MDF frame, gold drawer front"), colors: ["#F6F3ED", "#C9A96E", "#EDE3D2"] },
+  { ...make("ct-8", "White and Gold Marble Coffee Table with Wrapped Gold Bands", ctWhiteGoldMarbleWrapped.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
+    attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Gold Marble Top", "Faux gold-vein marble top, curved MDF body with gold band inlays, twin drawers with gold pulls"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
+];
+
+products.push(...coffeeTableProducts);
+
 
 export const formatKsh = (n: number) =>
   `KSh ${n.toLocaleString("en-KE", { minimumFractionDigits: 0 })}`;
