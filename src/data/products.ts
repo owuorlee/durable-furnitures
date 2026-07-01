@@ -198,6 +198,12 @@ import ctWhiteMinimalistTwoTier from "@/assets/ct-white-minimalist-two-tier.jpg.
 import ctWhiteBlackMarbleGoldTrim from "@/assets/ct-white-black-marble-gold-trim.jpg.asset.json";
 import ctWhiteGoldMarbleDrawer from "@/assets/ct-white-gold-marble-drawer.jpg.asset.json";
 import ctWhiteGoldMarbleWrapped from "@/assets/ct-white-gold-marble-wrapped.jpg.asset.json";
+import ctOvalGoldMarbleFluted from "@/assets/ct-oval-gold-marble-fluted.jpg.asset.json";
+import ctWhiteBlackGlassPalmMotif from "@/assets/ct-white-black-glass-palm-motif.jpg.asset.json";
+import ctSquareWhiteMarbleGoldStripes from "@/assets/ct-square-white-marble-gold-stripes.jpg.asset.json";
+import ctLongWhiteBlackGlassArch from "@/assets/ct-long-white-black-glass-arch.jpg.asset.json";
+import ctWhiteCurvedStorageDrawer from "@/assets/ct-white-curved-storage-drawer.jpg.asset.json";
+import ctBlackGlassWhiteDualTierCabinet from "@/assets/ct-black-glass-white-dual-tier-cabinet.jpg.asset.json";
 
 
 export type Product = {
@@ -800,6 +806,18 @@ const coffeeTableProducts: Product[] = [
     attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Gold Marble Top", "Faux gold-vein marble top with rounded corners, MDF frame, gold drawer front"), colors: ["#F6F3ED", "#C9A96E", "#EDE3D2"] },
   { ...make("ct-8", "White and Gold Marble Coffee Table with Wrapped Gold Bands", ctWhiteGoldMarbleWrapped.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
     attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Gold Marble Top", "Faux gold-vein marble top, curved MDF body with gold band inlays, twin drawers with gold pulls"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
+  { ...make("ct-9", "Oval Gold Marble Top Coffee Table with Fluted White Base and Gold Legs", ctOvalGoldMarbleFluted.url, "coffee-tables", markUp(20000, 10), 20000, 5, ["new", "featured"], true),
+    attributes: coffeeTableSpecs("130cm x 70cm x 45cm", "White with Golden Marble Top", "Polished golden-vein marble top, fluted high-gloss MDF body with twin drawers, gold metal legs"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
+  { ...make("ct-10", "Modern White Coffee Table with Black Glass Top and Palm Motif", ctWhiteBlackGlassPalmMotif.url, "coffee-tables", markUp(18000, 10), 18000, 4.5, ["new"]),
+    attributes: coffeeTableSpecs("120cm x 65cm x 45cm", "White with Black Glass Top", "Tempered black glass top with palm motif, high-gloss curved MDF body, twin drawers with chrome handles"), colors: ["#F5F3EE", "#0E0E0E", "#B8B8B8"] },
+  { ...make("ct-11", "Square White Marble Top Coffee Table with Gold Stripe Base", ctSquareWhiteMarbleGoldStripes.url, "coffee-tables", markUp(22000, 10), 22000, 5, ["top", "featured"], true),
+    attributes: coffeeTableSpecs("90cm x 90cm x 40cm", "White Marble with Gold Accents", "White marble top with grey veining, high-gloss MDF base with gold vertical stripe inlays, gold feet"), colors: ["#F5F3EE", "#C9A96E", "#DDD8CF"] },
+  { ...make("ct-12", "Long White Coffee Table with Black Glass Top and Arched Base", ctLongWhiteBlackGlassArch.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new"]),
+    attributes: coffeeTableSpecs("140cm x 60cm x 45cm", "White with Black Glass Top", "Tempered black glass top, high-gloss white MDF base with sculpted arched cutouts and open lower shelf"), colors: ["#F5F3EE", "#0E0E0E", "#EDE9E1"] },
+  { ...make("ct-13", "White Curved Coffee Table with Storage Drawer and Dark Accent", ctWhiteCurvedStorageDrawer.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new"]),
+    attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Dark Walnut Accent", "High-gloss curved MDF body, pull-out storage drawer, dark walnut inlay strip"), colors: ["#F5F3EE", "#3A2A1E", "#EDE9E1"] },
+  { ...make("ct-14", "Black Glass Top Coffee Table with White Dual-Tier Cabinet and Drawer", ctBlackGlassWhiteDualTierCabinet.url, "coffee-tables", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+    attributes: coffeeTableSpecs("135cm x 70cm x 45cm", "White with Black Glass Top", "Tempered black glass top, high-gloss MDF frame with side cabinet, open shelving and lower drawer"), colors: ["#F5F3EE", "#0E0E0E", "#8A8A8A"] },
 ];
 
 products.push(...coffeeTableProducts);
