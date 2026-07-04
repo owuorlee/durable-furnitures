@@ -289,25 +289,7 @@ const make = (
   colors: ["#1A1A1A", "#C9A96E", "#4A2C2A", "#B8A99A"],
 });
 
-export const products: Product[] = [
-  make("1", "Classic Grey 3-Seater Sofa", img1, "l-shaped-sofas", 48500, 44000, 5, ["new", "featured"]),
-  make("2", "Helsinki 7-Seater Dark Grey", img2, "sofa-set-designs", 68000, 62000, 5, ["new", "top"]),
-  make("3", "6×6 White Bed With Storage Drawers", img3, "chester-beds", 58000, 56000, 4.5, ["new"]),
-  make("4", "6-Seater Brown L-Shaped", img4, "l-shaped-sofas", 49000, 44500, 4, ["new", "featured"], true),
-  make("5", "Austin 3-Seater Classic Sofa", img5, "sofa-set-designs", 34000, 32000, 4.5, ["new"]),
-  make("6", "Snow White Sofa Bed", img6, "chester-seats", 28000, 26000, 4, ["featured"]),
-  make("8", "Alexandria 6-Seater Grey L", img8, "l-shaped-sofas", 47300, 43000, 4, ["featured"], true),
-  make("9", "Canterbury 5×6 Chester Bed", img9, "chester-beds", 42000, 36000, 4.5, ["featured", "top"]),
-  make("11", "Sovereign Tufted Chester Bed", img9, "chester-beds", 320000, 285000, 5, ["top"], true),
-  make("12", "Heritage Mahogany Coffee Table", img7, "coffee-tables", 48000, 42000, 5, ["top", "featured"]),
-  make("13", "Royal L-Shaped Velvet Sofa", img1, "l-shaped-sofas", 49500, 45000, 4.5, ["top"]),
-  make("14", "Atelier Wooden King Bed", img5, "wooden-beds", 88000, 76000, 5, ["top", "new"]),
-  make("16", "Verona Floating TV Console", img8, "tv-stands", 52000, 46000, 4, ["new"]),
-  make("17", "Nordic Oak Coffee Table", img7, "coffee-tables", 38000, 32000, 4.5, ["new", "featured"]),
-  make("18", "Marlow Grey Chester Seat", img4, "chester-seats", 42000, 38000, 4, ["featured"]),
-  make("19", "Savoy 4-Door Wooden Bed", img5, "wooden-beds", 72000, 64000, 4.5, ["featured"]),
-  make("20", "Bristol Walnut TV Stand", img8, "tv-stands", 58000, 49000, 4, ["top"]),
-];
+export const products: Product[] = [];
 
 // L-Shaped Sofa client photos — descriptions reflect color & style of each piece.
 const lshapeSpecs = (size: string, color: string) => [
