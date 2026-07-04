@@ -233,13 +233,13 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { slug: "l-shaped-sofas", name: "L-Shaped Sofas", image: img1, parent: "sofas" },
-  { slug: "sofa-set-designs", name: "Sofa Set Designs", image: img2, parent: "sofas" },
-  { slug: "chester-seats", name: "Chester Seats", image: img4, parent: "sofas" },
-  { slug: "chester-beds", name: "Chester Beds", image: img3, parent: "bedroom" },
-  { slug: "wooden-beds", name: "Wooden Beds", image: img5, parent: "bedroom" },
-  { slug: "coffee-tables", name: "Coffee Tables", image: img7, parent: "living-room" },
-  { slug: "tv-stands", name: "TV Stands", image: img8, parent: "living-room" },
+  { slug: "l-shaped-sofas", name: "L-Shaped Sofas", image: lsOlive, parent: "sofas" },
+  { slug: "sofa-set-designs", name: "Sofa Set Designs", image: ssCreamStuddedShowroom, parent: "sofas" },
+  { slug: "chester-seats", name: "Chester Seats", image: csCreamChannelSet, parent: "sofas" },
+  { slug: "chester-beds", name: "Chester Beds", image: cbDarkGreyPillowtop, parent: "bedroom" },
+  { slug: "wooden-beds", name: "Wooden Beds", image: wbGreyPanelled, parent: "bedroom" },
+  { slug: "coffee-tables", name: "Coffee Tables", image: ctBlackGlassWhiteDualTierCabinet.url, parent: "living-room" },
+  { slug: "tv-stands", name: "TV Stands", image: tvWhiteGeometricGoldHandle2Drawer, parent: "living-room" },
   { slug: "dining-sets", name: "Dining Sets", image: dtWhiteOvalFluted, parent: "dining" },
 ];
 
