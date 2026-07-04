@@ -817,6 +817,6 @@ export const navStructure = [
   { slug: "sofas", name: "Sofas", children: ["l-shaped-sofas", "sofa-set-designs", "chester-seats"] },
   { slug: "bedroom", name: "Bedroom", children: ["chester-beds", "wooden-beds"] },
   { slug: "living-room", name: "Living Room", children: ["coffee-tables", "tv-stands"] },
-  { slug: "chairs", name: "Chairs", children: ["chester-seats"] },
+  
   { slug: "dining", name: "Dining Table Designs", children: ["dining-sets"] },
 ];
