@@ -18,7 +18,15 @@ const FeaturedProducts = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
-  const visible = products.filter((p) => p.tags.includes(activeTab)).slice(0, 5);
+  const curated: Record<TabKey, string[]> = {
+    new: ["cb-11", "wb-17", "dt-15", "ls-6", "ss-6", "cb-19", "wb-18", "dt-2"],
+    featured: ["dt-20", "dt-4", "cs-8", "cs-6", "ss-13", "ls-16", "cb-1", "wb-1"],
+    top: ["ct-11", "ct-5", "tv-15", "tv-29", "cs-9", "cs-14", "wb-5", "cb-5"],
+  };
+  const byId = new Map(products.map((p) => [p.id, p]));
+  const visible = curated[activeTab]
+    .map((id) => byId.get(id))
+    .filter((p): p is Product => Boolean(p));
 
   return (
     <section id="products" className="bg-muted/30 px-6 py-16 md:py-20">
