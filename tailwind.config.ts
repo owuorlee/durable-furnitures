@@ -93,6 +93,14 @@ export default {
           "0%, 100%": { transform: "translateY(0)", opacity: "1" },
           "50%": { transform: "translateY(10px)", opacity: "0.5" },
         },
+        "gallery-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "gallery-right": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -100,7 +108,10 @@ export default {
         "fade-up": "fade-up 0.8s ease-out forwards",
         "fade-in": "fade-in 0.6s ease-out forwards",
         "scroll-hint": "scroll-hint 2s ease-in-out infinite",
+        "gallery-left": "gallery-left linear infinite",
+        "gallery-right": "gallery-right linear infinite",
       },
+
     },
   },
   plugins: [require("tailwindcss-animate")],
