@@ -4,6 +4,7 @@ import CategoryNav from "@/components/CategoryNav";
 import PromoHero from "@/components/PromoHero";
 import PopularCategories from "@/components/PopularCategories";
 import FeaturedProducts from "@/components/FeaturedProducts";
+import Gallery from "@/components/Gallery";
 import ValueProps from "@/components/ValueProps";
 import FeaturedProduct from "@/components/FeaturedProduct";
 import Testimonials from "@/components/Testimonials";
