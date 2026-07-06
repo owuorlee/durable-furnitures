@@ -21,6 +21,7 @@ const Index = () => {
       <PromoHero />
       <PopularCategories />
       <FeaturedProducts />
+      <Gallery />
       <ValueProps />
       <FeaturedProduct />
       <Testimonials />
