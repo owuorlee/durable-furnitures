@@ -6,7 +6,7 @@ import PopularCategories from "@/components/PopularCategories";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import Gallery from "@/components/Gallery";
 import ValueProps from "@/components/ValueProps";
-import FeaturedProduct from "@/components/FeaturedProduct";
+
 import Testimonials from "@/components/Testimonials";
 import LifestyleGallery from "@/components/LifestyleGallery";
 import CTABanner from "@/components/CTABanner";
@@ -23,7 +23,7 @@ const Index = () => {
       <FeaturedProducts />
       <Gallery />
       <ValueProps />
-      <FeaturedProduct />
+      
       <Testimonials />
       <LifestyleGallery />
       <CTABanner />

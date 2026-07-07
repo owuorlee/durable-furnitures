@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Paintbrush, Truck, Smartphone, Star } from "lucide-react";
+import { Paintbrush, Truck, Smartphone } from "lucide-react";
 
 const values = [
   {
@@ -17,11 +17,6 @@ const values = [
     icon: Smartphone,
     title: "Seamless M-Pesa Checkout",
     desc: "Pay securely via M-Pesa, card, or installments",
-  },
-  {
-    icon: Star,
-    title: "Interior Design Consultation",
-    desc: "Free virtual styling with every purchase above KES 500K",
   },
 ];
 
@@ -44,7 +39,7 @@ const ValueProps = () => {
           <div className="mx-auto mt-4 h-px w-12 bg-gold" />
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((v, i) => (
             <motion.div
               key={v.title}
