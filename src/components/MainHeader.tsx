@@ -2,6 +2,7 @@ import { Heart, Repeat2, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useShop } from "@/context/ShopContext";
 import SearchBar from "@/components/shop/SearchBar";
+import BrandMark from "@/components/BrandMark";
 
 const IconWithBadge = ({
   icon: Icon,
