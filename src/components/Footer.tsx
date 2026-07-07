@@ -8,9 +8,17 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="mb-3 font-display text-lg font-light tracking-wider text-ivory">
-              DURABLE
-            </h3>
+            <div className="mb-3 flex items-center gap-3">
+              <BrandMark className="h-9 w-9 text-ivory" />
+              <div>
+                <h3 className="font-display text-lg font-light tracking-[0.15em] text-ivory">
+                  DURABLE
+                </h3>
+                <p className="text-[10px] uppercase tracking-[0.25em] text-ivory/60">
+                  Furniture House
+                </p>
+              </div>
+            </div>
             <p className="font-body text-xs leading-relaxed text-ivory/60">
               Kenya's Premier Luxury Furniture House. Crafting timeless pieces since 2018.
             </p>
