@@ -2,6 +2,7 @@ import { Heart, Repeat2, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useShop } from "@/context/ShopContext";
 import SearchBar from "@/components/shop/SearchBar";
+import BrandMark from "@/components/BrandMark";
 
 const IconWithBadge = ({
   icon: Icon,
@@ -34,13 +35,16 @@ const MainHeader = () => {
   return (
     <header className="border-b border-border bg-background">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:gap-6">
-        <Link to="/" className="flex-shrink-0">
-          <h1 className="font-display text-2xl font-light tracking-[0.15em] text-foreground">
-            DURABLE
-          </h1>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-            Furniture House
-          </p>
+        <Link to="/" className="flex flex-shrink-0 items-center gap-3">
+          <BrandMark className="h-10 w-10 text-gold" />
+          <div>
+            <h1 className="font-display text-2xl font-light tracking-[0.15em] text-foreground">
+              DURABLE
+            </h1>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+              Furniture House
+            </p>
+          </div>
         </Link>
 
         <div className="hidden lg:block lg:flex-shrink-0">

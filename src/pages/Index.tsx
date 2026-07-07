@@ -8,7 +8,6 @@ import Gallery from "@/components/Gallery";
 import ValueProps from "@/components/ValueProps";
 
 import Testimonials from "@/components/Testimonials";
-import LifestyleGallery from "@/components/LifestyleGallery";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
 
@@ -25,7 +24,7 @@ const Index = () => {
       <ValueProps />
       
       <Testimonials />
-      <LifestyleGallery />
+      
       <CTABanner />
       <Footer />
     </main>
