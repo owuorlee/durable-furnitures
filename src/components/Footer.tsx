@@ -1,4 +1,5 @@
 import { Instagram, Facebook, MessageCircle } from "lucide-react";
+import BrandMark from "@/components/BrandMark";
 
 const Footer = () => {
   return (
