@@ -24,7 +24,7 @@ const Index = () => {
       <ValueProps />
       
       <Testimonials />
-      <LifestyleGallery />
+      
       <CTABanner />
       <Footer />
     </main>
