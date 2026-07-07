@@ -1,20 +1,33 @@
 import { ChevronDown, Menu } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navStructure, categories } from "@/data/products";
 
 const CategoryNav = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onScroll = () => setMobileOpen(false);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [mobileOpen]);
+
   return (
     <nav className="sticky top-0 z-40 w-full border-b border-gold/30 bg-gold shadow-sm">
       <div className="mx-auto max-w-7xl px-6">
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="text-cta flex items-center gap-2 py-3 text-xs text-obsidian md:hidden"
+          aria-expanded={mobileOpen}
+          className="text-cta flex w-full items-center justify-between gap-2 py-3 text-xs text-obsidian md:hidden"
         >
-          <Menu className="h-4 w-4" />
-          Browse Categories
+          <span className="flex items-center gap-2">
+            <Menu className="h-4 w-4" />
+            Browse Categories
+          </span>
+          <ChevronDown
+            className={`h-4 w-4 transition-transform duration-300 ${mobileOpen ? "rotate-180" : "rotate-0"}`}
+          />
         </button>
 
         <ul className="hidden items-center md:flex">
