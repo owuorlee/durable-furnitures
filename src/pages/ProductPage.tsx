@@ -151,19 +151,21 @@ const ProductPage = () => {
                   />
                 </AnimatePresence>
               </div>
-              <div className="mt-4 grid grid-cols-4 gap-3">
-                {product.gallery.map((img, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setActiveImage(i)}
-                    className={`aspect-square overflow-hidden border-2 transition-colors ${
-                      activeImage === i ? "border-gold" : "border-border hover:border-gold/50"
-                    }`}
-                  >
-                    <img src={img} alt={`${product.name} ${i + 1}`} className="h-full w-full object-cover" />
-                  </button>
-                ))}
-              </div>
+              {product.gallery.length > 1 && (
+                <div className="mt-4 grid grid-cols-4 gap-3">
+                  {product.gallery.map((img, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setActiveImage(i)}
+                      className={`aspect-square overflow-hidden border-2 transition-colors ${
+                        activeImage === i ? "border-gold" : "border-border hover:border-gold/50"
+                      }`}
+                    >
+                      <img src={img} alt={`${product.name} ${i + 1}`} className="h-full w-full object-cover" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Details */}
