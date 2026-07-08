@@ -266,7 +266,7 @@ const make = (
   slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
   name,
   image,
-  gallery: [image, img10, img9, img7],
+  gallery: [image],
   rating,
   reviewCount: Math.floor(rating * 12 + 3),
   original,
