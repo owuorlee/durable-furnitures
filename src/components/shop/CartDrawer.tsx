@@ -5,7 +5,7 @@ import { Minus, Plus, X, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CartDrawer = () => {
-  const { cartOpen, setCartOpen, cartItemsResolved, updateQty, removeFromCart, cartSubtotal } = useShop();
+  const { cartOpen, setCartOpen, cartItemsResolved, updateQty, removeFromCart, cartSubtotal, currentOrderId } = useShop();
 
   return (
     <Sheet open={cartOpen} onOpenChange={setCartOpen}>
@@ -82,6 +82,15 @@ const CartDrawer = () => {
             </div>
 
             <div className="border-t border-border px-6 py-4">
+              {currentOrderId && (
+                <div className="mb-4 border border-gold/30 bg-gold/5 px-3 py-2.5 text-center">
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Your Order ID</p>
+                  <p className="mt-0.5 font-body text-sm font-semibold tracking-wider text-gold">{currentOrderId}</p>
+                  <p className="mt-1 font-body text-[10px] text-muted-foreground">
+                    Save this ID to <Link to="/track-order" onClick={() => setCartOpen(false)} className="underline hover:text-gold">track your order</Link>.
+                  </p>
+                </div>
+              )}
               <div className="mb-4 flex items-center justify-between">
                 <span className="font-body text-sm text-foreground">Subtotal</span>
                 <span className="font-display text-xl text-gold">{formatKsh(cartSubtotal)}</span>
