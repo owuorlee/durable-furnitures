@@ -13,7 +13,7 @@ const testimonials = [
     location: "Westlands, Nairobi",
   },
   {
-    quote: "Our Chester Bed is the most complimented piece in our home. Durable truly understands luxury.",
+    quote: "Our Chester Bed turned our bedroom into a private sanctuary. We have never slept better. Durable truly understands luxury.",
     name: "David M.",
     location: "Runda, Nairobi",
   },
