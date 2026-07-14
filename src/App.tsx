@@ -10,6 +10,8 @@ import Category from "./pages/Category.tsx";
 import ProductPage from "./pages/ProductPage.tsx";
 import About from "./pages/About.tsx";
 import TrackOrder from "./pages/TrackOrder.tsx";
+import Wishlist from "./pages/Wishlist.tsx";
+import Compare from "./pages/Compare.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -20,13 +22,15 @@ const App = () => (
       <ShopProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/category/:slug" element={<Category />} />
             <Route path="/product/:slug" element={<ProductPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/track-order" element={<TrackOrder />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/compare" element={<Compare />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <CartDrawer />

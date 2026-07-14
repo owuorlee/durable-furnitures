@@ -1,5 +1,5 @@
 import { Heart, Phone, Repeat2, ShoppingBag } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useShop } from "@/context/ShopContext";
 import SearchBar from "@/components/shop/SearchBar";
 import BrandMark from "@/components/BrandMark";
@@ -34,7 +34,8 @@ const IconWithBadge = ({
 );
 
 const MainHeader = () => {
-  const { wishlistCount, cartCount, setCartOpen } = useShop();
+  const { wishlistCount, compareCount, cartCount, setCartOpen } = useShop();
+  const navigate = useNavigate();
 
   return (
     <header className="border-b border-border bg-background">
@@ -110,8 +111,8 @@ const MainHeader = () => {
         </div>
 
         <div className="flex items-center gap-6 md:flex-shrink-0">
-          <IconWithBadge icon={Heart} count={wishlistCount} label="Wishlist" />
-          <IconWithBadge icon={Repeat2} count={0} label="Compare" />
+          <IconWithBadge icon={Heart} count={wishlistCount} label="Wishlist" onClick={() => navigate("/wishlist")} />
+          <IconWithBadge icon={Repeat2} count={compareCount} label="Compare" onClick={() => navigate("/compare")} />
           <IconWithBadge icon={ShoppingBag} count={cartCount} label="Cart" onClick={() => setCartOpen(true)} />
         </div>
       </div>

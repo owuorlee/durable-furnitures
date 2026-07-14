@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import heroImage from "@/assets/hero-living-room.jpg";
 import heroLounge from "@/assets/hero-lounge-golden.jpg";
@@ -22,7 +23,7 @@ const slides: Slide[] = [
     titleBottom: "Your Space",
     subtitle: (
       <>
-        Up to <span className="font-semibold text-gold">60% OFF</span> on hand-crafted new arrivals.
+        Up to <span className="font-semibold text-gold">40% OFF</span> on selected pieces.
       </>
     ),
     primary: { label: "Shop Now", href: "#products" },
@@ -38,7 +39,7 @@ const slides: Slide[] = [
         Bespoke sofas built for the moments that matter — designed in Nairobi, made to last a lifetime.
       </>
     ),
-    primary: { label: "Explore Sofas", href: "/category/l-shaped-sofa-sets" },
+    primary: { label: "Explore Sofas", href: "/category/l-shaped-sofas" },
     secondary: { label: "See Coffee Tables", href: "/category/coffee-tables" },
   },
   {
@@ -150,6 +151,23 @@ const PromoHero = () => {
           </div>
         </AnimatePresence>
       </div>
+
+      {/* Prev/next arrows — goTo() bumps the tick, which restarts the
+          auto-advance timer so a manual click always gets a full interval. */}
+      <button
+        onClick={() => goTo(index - 1)}
+        aria-label="Previous slide"
+        className="absolute left-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 bg-obsidian/30 text-ivory backdrop-blur-sm transition-all duration-300 hover:border-gold/60 hover:bg-obsidian/50 hover:text-gold md:left-6 md:h-12 md:w-12"
+      >
+        <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.5} />
+      </button>
+      <button
+        onClick={() => goTo(index + 1)}
+        aria-label="Next slide"
+        className="absolute right-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 bg-obsidian/30 text-ivory backdrop-blur-sm transition-all duration-300 hover:border-gold/60 hover:bg-obsidian/50 hover:text-gold md:right-6 md:h-12 md:w-12"
+      >
+        <ChevronRight className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.5} />
+      </button>
 
       {/* Pagination dots */}
       <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2">

@@ -15,6 +15,8 @@ import { useShop } from "@/context/ShopContext";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 
+const PHONE_WA = "254741530539";
+
 type Review = { id: string; name: string; rating: number; text: string; date: string };
 
 const initialReviews: Review[] = [
@@ -41,9 +43,21 @@ const ProductPage = () => {
     [product],
   );
 
-  const productIndex = useMemo(() => products.findIndex((p) => p.slug === slug), [slug]);
-  const prev = productIndex > 0 ? products[productIndex - 1] : null;
-  const next = productIndex < products.length - 1 ? products[productIndex + 1] : null;
+  // Prev/next stays within the current product's category so browsing
+  // neighbours never jumps into an unrelated collection.
+  const categoryProducts = useMemo(
+    () => (product ? products.filter((p) => p.category === product.category) : []),
+    [product],
+  );
+  const productIndex = useMemo(
+    () => categoryProducts.findIndex((p) => p.slug === slug),
+    [categoryProducts, slug],
+  );
+  const prev = productIndex > 0 ? categoryProducts[productIndex - 1] : null;
+  const next =
+    productIndex >= 0 && productIndex < categoryProducts.length - 1
+      ? categoryProducts[productIndex + 1]
+      : null;
 
   if (!product) {
     return (
@@ -235,7 +249,7 @@ const ProductPage = () => {
 
               <div className="mt-6 space-y-3">
                 <a
-                  href={`https://wa.me/254700000000?text=${encodeURIComponent(`Hi, I'd like to order ${qty} × ${product.name} (${formatKsh(product.sale)})`)}`}
+                  href={`https://wa.me/${PHONE_WA}?text=${encodeURIComponent(`Hi, I'd like to order ${qty} × ${product.name} (${formatKsh(product.sale)})`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cta flex w-full items-center justify-center gap-2 bg-emerald-600 py-4 text-[11px] text-white transition-colors hover:bg-emerald-700"

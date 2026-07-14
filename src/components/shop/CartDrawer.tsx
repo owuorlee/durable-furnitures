@@ -4,8 +4,28 @@ import { formatKsh } from "@/data/products";
 import { Minus, Plus, X, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const PHONE_WA = "254741530539";
+
 const CartDrawer = () => {
   const { cartOpen, setCartOpen, cartItemsResolved, updateQty, removeFromCart, cartSubtotal, currentOrderId } = useShop();
+
+  // Checkout is a WhatsApp handoff: the client's order summary is pre-filled
+  // so the shop can confirm details and arrange payment on delivery.
+  const checkoutViaWhatsApp = () => {
+    const items = cartItemsResolved
+      .map(({ product, qty }) => `${qty} × ${product.name}`)
+      .join(", ");
+    const message =
+      `Hello Durable Furniture House, I would like to place an order. ` +
+      `My Order ID is: ${currentOrderId ?? "(not yet assigned)"}. ` +
+      `Items: ${items}. ` +
+      `Total: ${formatKsh(cartSubtotal)}`;
+    window.open(
+      `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(message)}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
 
   return (
     <Sheet open={cartOpen} onOpenChange={setCartOpen}>
@@ -95,7 +115,10 @@ const CartDrawer = () => {
                 <span className="font-body text-sm text-foreground">Subtotal</span>
                 <span className="font-display text-xl text-gold">{formatKsh(cartSubtotal)}</span>
               </div>
-              <button className="text-cta w-full bg-gold py-3 text-[11px] text-obsidian transition-colors hover:bg-foreground hover:text-primary-foreground">
+              <button
+                onClick={checkoutViaWhatsApp}
+                className="text-cta w-full bg-gold py-3 text-[11px] text-obsidian transition-colors hover:bg-foreground hover:text-primary-foreground"
+              >
                 Proceed to Checkout
               </button>
               <button

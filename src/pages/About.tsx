@@ -130,7 +130,7 @@ const About = () => {
             <div className="border border-border bg-muted/30 p-6">
               <MapPin className="mx-auto h-5 w-5 text-gold" strokeWidth={1.5} />
               <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Address</p>
-              <p className="mt-1 font-body text-sm italic text-muted-foreground">Coming soon</p>
+              <p className="mt-1 font-body text-sm text-foreground">Nairobi, Kenya</p>
             </div>
           </div>
 

@@ -8,8 +8,10 @@ type CartItem = { productId: string; qty: number };
 type ShopState = {
   cart: CartItem[];
   wishlist: string[];
+  compare: string[];
   cartCount: number;
   wishlistCount: number;
+  compareCount: number;
   cartSubtotal: number;
   cartOpen: boolean;
   currentOrderId: string | null;
@@ -19,8 +21,14 @@ type ShopState = {
   updateQty: (productId: string, qty: number) => void;
   toggleWishlist: (productId: string) => void;
   isWishlisted: (productId: string) => boolean;
+  toggleCompare: (productId: string) => void;
+  isCompared: (productId: string) => boolean;
+  clearCompare: () => void;
   cartItemsResolved: { product: Product; qty: number }[];
 };
+
+// Comparison works best side-by-side; cap the tray at 4 products.
+export const COMPARE_LIMIT = 4;
 
 const ShopContext = createContext<ShopState | null>(null);
 
@@ -60,6 +68,7 @@ const saveOrder = (id: string, product: Product, qty: number) => {
 export const ShopProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>(() => load("durable-cart", []));
   const [wishlist, setWishlist] = useState<string[]>(() => load("durable-wishlist", []));
+  const [compare, setCompare] = useState<string[]>(() => load("durable-compare", []));
   const [cartOpen, setCartOpen] = useState(false);
   const [currentOrderId, setCurrentOrderId] = useState<string | null>(() =>
     load<string | null>("durable-current-order", null),
@@ -67,6 +76,7 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => localStorage.setItem("durable-cart", JSON.stringify(cart)), [cart]);
   useEffect(() => localStorage.setItem("durable-wishlist", JSON.stringify(wishlist)), [wishlist]);
+  useEffect(() => localStorage.setItem("durable-compare", JSON.stringify(compare)), [compare]);
   useEffect(() => {
     localStorage.setItem("durable-current-order", JSON.stringify(currentOrderId));
   }, [currentOrderId]);
@@ -113,6 +123,23 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
 
   const isWishlisted = useCallback((id: string) => wishlist.includes(id), [wishlist]);
 
+  const toggleCompare = useCallback((productId: string) => {
+    setCompare((prev) => {
+      if (prev.includes(productId)) return prev.filter((id) => id !== productId);
+      if (prev.length >= COMPARE_LIMIT) {
+        toast.error(`You can compare up to ${COMPARE_LIMIT} products`, {
+          description: "Remove one from your compare list to add another.",
+        });
+        return prev;
+      }
+      return [...prev, productId];
+    });
+  }, []);
+
+  const isCompared = useCallback((id: string) => compare.includes(id), [compare]);
+
+  const clearCompare = useCallback(() => setCompare([]), []);
+
   const cartItemsResolved = useMemo(
     () =>
       cart
@@ -132,8 +159,10 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
   const value: ShopState = {
     cart,
     wishlist,
+    compare,
     cartCount: cart.reduce((a, i) => a + i.qty, 0),
     wishlistCount: wishlist.length,
+    compareCount: compare.length,
     cartSubtotal: cartItemsResolved.reduce((a, i) => a + i.product.sale * i.qty, 0),
     cartOpen,
     currentOrderId,
@@ -143,6 +172,9 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
     updateQty,
     toggleWishlist,
     isWishlisted,
+    toggleCompare,
+    isCompared,
+    clearCompare,
     cartItemsResolved,
   };
 

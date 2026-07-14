@@ -81,6 +81,27 @@ const CategoryNav = () => {
                 </Link>
               </li>
             ))}
+            {/* Utility pages — the desktop utility bar is hidden on mobile,
+                so these stay reachable from the category menu. */}
+            <li aria-hidden="true" className="my-1.5 border-t border-obsidian/15" />
+            <li>
+              <Link
+                to="/about"
+                onClick={() => setMobileOpen(false)}
+                className="text-cta block py-2.5 text-xs text-obsidian"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/track-order"
+                onClick={() => setMobileOpen(false)}
+                className="text-cta block py-2.5 text-xs text-obsidian"
+              >
+                Track Order
+              </Link>
+            </li>
           </ul>
         )}
       </div>

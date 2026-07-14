@@ -12,9 +12,10 @@ type Props = {
 };
 
 const ProductCard = ({ product, onQuickView }: Props) => {
-  const { addToCart, toggleWishlist, isWishlisted, setCartOpen } = useShop();
+  const { addToCart, toggleWishlist, isWishlisted, toggleCompare, isCompared } = useShop();
   const discount = Math.round(((product.original - product.sale) / product.original) * 100);
   const wished = isWishlisted(product.id);
+  const compared = isCompared(product.id);
 
   const handleAdd = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -54,9 +55,12 @@ const ProductCard = ({ product, onQuickView }: Props) => {
             aria-label="Compare"
             onClick={(e) => {
               e.preventDefault();
-              toast("Added to compare", { description: product.name });
+              toggleCompare(product.id);
+              toast(compared ? "Removed from compare" : "Added to compare", { description: product.name });
             }}
-            className="flex h-9 w-9 items-center justify-center bg-background text-foreground shadow-md transition-colors hover:bg-gold hover:text-obsidian"
+            className={`flex h-9 w-9 items-center justify-center shadow-md transition-colors ${
+              compared ? "bg-gold text-obsidian" : "bg-background text-foreground hover:bg-gold hover:text-obsidian"
+            }`}
           >
             <Repeat2 className="h-4 w-4" strokeWidth={1.5} />
           </button>

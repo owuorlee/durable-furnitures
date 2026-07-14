@@ -232,7 +232,7 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { slug: "l-shaped-sofas", name: "L-Shaped Sofas", image: lsOlive, parent: "sofas" },
+  { slug: "l-shaped-sofas", name: "L-Shaped Sofa Sets", image: lsOlive, parent: "sofas" },
   { slug: "sofa-set-designs", name: "Sofa Set Designs", image: ssCreamStuddedShowroom, parent: "sofas" },
   { slug: "chester-seats", name: "Chester Seats", image: csCreamChannelSet, parent: "sofas" },
   { slug: "chester-beds", name: "Chester Beds", image: cbDarkGreyPillowtop, parent: "bedroom" },

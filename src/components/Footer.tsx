@@ -29,7 +29,8 @@ const Footer = () => {
             <h4 className="text-cta mb-4 text-xs text-ivory/80">Quick Links</h4>
             <ul className="space-y-2 font-body text-sm text-ivory/50">
               <li><a href="#categories" className="transition-colors hover:text-gold">Collections</a></li>
-              <li><a href="#" className="transition-colors hover:text-gold">About Us</a></li>
+              <li><a href="/about" className="transition-colors hover:text-gold">About Us</a></li>
+              <li><a href="/track-order" className="transition-colors hover:text-gold">Track Order</a></li>
               <li><a href="#" className="transition-colors hover:text-gold">Delivery Info</a></li>
               <li><a href="#" className="transition-colors hover:text-gold">Contact</a></li>
             </ul>
@@ -51,7 +52,7 @@ const Footer = () => {
             <p className="mb-3 font-body text-sm text-ivory/50">Nairobi, Kenya</p>
             <div className="mb-4 flex items-center gap-2 text-ivory/50">
               <MessageCircle className="h-4 w-4" />
-              <span className="font-body text-sm">+254 7XX XXX XXX</span>
+              <span className="font-body text-sm">+254 741 530 539</span>
             </div>
             <div className="flex gap-4">
               <a href="#" className="text-ivory/40 transition-colors hover:text-gold">
@@ -71,7 +72,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-ivory/10 pt-8 text-center">
           <p className="font-body text-xs text-ivory/40">
-            © 2026 Durable Furniture Store. All rights reserved.
+            © 2026 Durable Furniture House. All rights reserved.
           </p>
         </div>
       </div>
