@@ -4,7 +4,6 @@ import img3 from "@/assets/cat-chester-bed.jpg";
 import img4 from "@/assets/cat-chester-seat.jpg";
 import img5 from "@/assets/cat-wooden-bed.jpg";
 import img6 from "@/assets/cat-dining-set.jpg";
-import img7 from "@/assets/cat-coffee-table.jpg";
 import img8 from "@/assets/cat-tv-stand.jpg";
 import img9 from "@/assets/featured-chester-bed.jpg";
 import img10 from "@/assets/hero-living-room.jpg";
@@ -182,28 +181,28 @@ import tvWalnutWhiteOpenShelfConsole from "@/assets/tv-stand-walnut-white-open-s
 import tvWhiteCurvedGoldLineConsoleWrapped from "@/assets/tv-stand-white-curved-gold-line-console-wrapped.png";
 import tvWhiteDiamondGoldTrimConsole from "@/assets/tv-stand-white-diamond-gold-trim-console.png";
 import tvWhiteFlutedCurvedOpenShelfConsole from "@/assets/tv-stand-white-fluted-curved-open-shelf-console.png";
-import tvWhiteWalnutDisplayTower from "@/assets/tv-stand-white-walnut-display-tower.png.asset.json";
-import tvWhiteGeometricGoldConsoleWide from "@/assets/tv-stand-white-geometric-gold-console-wide.png.asset.json";
-import tvWhiteGoldRoundedDiamondConsole from "@/assets/tv-stand-white-gold-rounded-diamond-console.png.asset.json";
-import tvWhiteGeometricOpenShelfConsole from "@/assets/tv-stand-white-geometric-open-shelf-console.png.asset.json";
-import tvWhiteFlutedOvalMediaConsole from "@/assets/tv-stand-white-fluted-oval-media-console.png.asset.json";
-import tvWhiteFlutedOpenCenterConsole from "@/assets/tv-stand-white-fluted-open-center-console.png.asset.json";
-import tvWhiteGoldDiamondPatternConsole from "@/assets/tv-stand-white-gold-diamond-pattern-console.png.asset.json";
-import tvWhiteWrappedGoldLineConsole from "@/assets/tv-stand-white-wrapped-gold-line-console.png.asset.json";
-import ctBlackGlassWhiteBase from "@/assets/ct-black-glass-white-base.jpg.asset.json";
-import ctWhiteGreyMarbleDrawer from "@/assets/ct-white-grey-marble-drawer.jpg.asset.json";
-import ctWhiteGoldMarbleTiered from "@/assets/ct-white-gold-marble-tiered.jpg.asset.json";
-import ctWhiteHighglossTwoTier from "@/assets/ct-white-highgloss-two-tier.jpg.asset.json";
-import ctWhiteMinimalistTwoTier from "@/assets/ct-white-minimalist-two-tier.jpg.asset.json";
-import ctWhiteBlackMarbleGoldTrim from "@/assets/ct-white-black-marble-gold-trim.jpg.asset.json";
-import ctWhiteGoldMarbleDrawer from "@/assets/ct-white-gold-marble-drawer.jpg.asset.json";
-import ctWhiteGoldMarbleWrapped from "@/assets/ct-white-gold-marble-wrapped.jpg.asset.json";
-import ctOvalGoldMarbleFluted from "@/assets/ct-oval-gold-marble-fluted.jpg.asset.json";
-import ctWhiteBlackGlassPalmMotif from "@/assets/ct-white-black-glass-palm-motif.jpg.asset.json";
-import ctSquareWhiteMarbleGoldStripes from "@/assets/ct-square-white-marble-gold-stripes.jpg.asset.json";
-import ctLongWhiteBlackGlassArch from "@/assets/ct-long-white-black-glass-arch.jpg.asset.json";
-import ctWhiteCurvedStorageDrawer from "@/assets/ct-white-curved-storage-drawer.jpg.asset.json";
-import ctBlackGlassWhiteDualTierCabinet from "@/assets/ct-black-glass-white-dual-tier-cabinet.jpg.asset.json";
+import tvWhiteWalnutDisplayTower from "@/assets/tv-stand-white-walnut-display-tower.png";
+import tvWhiteGeometricGoldConsoleWide from "@/assets/tv-stand-white-geometric-gold-console-wide.png";
+import tvWhiteGoldRoundedDiamondConsole from "@/assets/tv-stand-white-gold-rounded-diamond-console.png";
+import tvWhiteGeometricOpenShelfConsole from "@/assets/tv-stand-white-geometric-open-shelf-console.png";
+import tvWhiteFlutedOvalMediaConsole from "@/assets/tv-stand-white-fluted-oval-media-console.png";
+import tvWhiteFlutedOpenCenterConsole from "@/assets/tv-stand-white-fluted-open-center-console.png";
+import tvWhiteGoldDiamondPatternConsole from "@/assets/tv-stand-white-gold-diamond-pattern-console.png";
+import tvWhiteWrappedGoldLineConsole from "@/assets/tv-stand-white-wrapped-gold-line-console.png";
+import ctBlackGlassWhiteBase from "@/assets/ct-black-glass-white-base.jpg";
+import ctWhiteGreyMarbleDrawer from "@/assets/ct-white-grey-marble-drawer.jpg";
+import ctWhiteGoldMarbleTiered from "@/assets/ct-white-gold-marble-tiered.jpg";
+import ctWhiteHighglossTwoTier from "@/assets/ct-white-highgloss-two-tier.jpg";
+import ctWhiteMinimalistTwoTier from "@/assets/ct-white-minimalist-two-tier.jpg";
+import ctWhiteBlackMarbleGoldTrim from "@/assets/ct-white-black-marble-gold-trim.jpg";
+import ctWhiteGoldMarbleDrawer from "@/assets/ct-white-gold-marble-drawer.jpg";
+import ctWhiteGoldMarbleWrapped from "@/assets/ct-white-gold-marble-wrapped.jpg";
+import ctOvalGoldMarbleFluted from "@/assets/ct-oval-gold-marble-fluted.jpg";
+import ctWhiteBlackGlassPalmMotif from "@/assets/ct-white-black-glass-palm-motif.jpg";
+import ctSquareWhiteMarbleGoldStripes from "@/assets/ct-square-white-marble-gold-stripes.jpg";
+import ctLongWhiteBlackGlassArch from "@/assets/ct-long-white-black-glass-arch.jpg";
+import ctWhiteCurvedStorageDrawer from "@/assets/ct-white-curved-storage-drawer.jpg";
+import ctBlackGlassWhiteDualTierCabinet from "@/assets/ct-black-glass-white-dual-tier-cabinet.jpg";
 
 
 export type Product = {
@@ -238,7 +237,7 @@ export const categories: Category[] = [
   { slug: "chester-seats", name: "Chester Seats", image: csCreamChannelSet, parent: "sofas" },
   { slug: "chester-beds", name: "Chester Beds", image: cbDarkGreyPillowtop, parent: "bedroom" },
   { slug: "wooden-beds", name: "Wooden Beds", image: wbGreyPanelled, parent: "bedroom" },
-  { slug: "coffee-tables", name: "Coffee Tables", image: ctBlackGlassWhiteDualTierCabinet.url, parent: "living-room" },
+  { slug: "coffee-tables", name: "Coffee Tables", image: ctBlackGlassWhiteDualTierCabinet, parent: "living-room" },
   { slug: "tv-stands", name: "TV Stands", image: tvWhiteGeometricGoldHandle2Drawer, parent: "living-room" },
   { slug: "dining-sets", name: "Dining Sets", image: dtWhiteOvalFluted, parent: "dining" },
 ];
@@ -600,21 +599,21 @@ const tvStandProducts: Product[] = [
     attributes: tvStandSpecs("190cm x 40cm x 55cm", "White with Gold Trim", "Painted MDF board, diamond-pattern cabinet fronts, open center shelf, gold-tone handles and legs"), colors: ["#F7F5F1", "#C9A96E", "#DFD9D0"] },
   { ...make("tv-32", "White Fluted Curved TV Console with Open Shelf", tvWhiteFlutedCurvedOpenShelfConsole, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
     attributes: tvStandSpecs("190cm x 40cm x 55cm", "Soft White with Gold Trim", "Fluted MDF board, curved end panels, open center shelf, drawer storage, gold-tone legs"), colors: ["#F5F3EE", "#C9A96E", "#D9D4CC"] },
-  { ...make("tv-33", "White and Walnut TV Stand with Display Tower Shelves", tvWhiteWalnutDisplayTower.url, "tv-stands", markUp(20000, 10), 20000, 4.5, ["new", "featured"]),
+  { ...make("tv-33", "White and Walnut TV Stand with Display Tower Shelves", tvWhiteWalnutDisplayTower, "tv-stands", markUp(20000, 10), 20000, 4.5, ["new", "featured"]),
     attributes: tvStandSpecs("220cm x 40cm x 180cm", "White with Dark Walnut Brown", "High gloss MDF board, integrated vertical display shelves, open cubbies, metal drawer pulls"), colors: ["#F6F4EE", "#5C3926", "#C9A96E"] },
-  { ...make("tv-34", "Wide White Geometric TV Stand with Gold Accents", tvWhiteGeometricGoldConsoleWide.url, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
+  { ...make("tv-34", "Wide White Geometric TV Stand with Gold Accents", tvWhiteGeometricGoldConsoleWide, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
     attributes: tvStandSpecs("200cm x 40cm x 55cm", "Gloss White with Gold Inlay", "High gloss MDF board, geometric gold line detailing, center shelf, pedestal base"), colors: ["#F7F5F0", "#C9A96E", "#DDD8CF"] },
-  { ...make("tv-35", "White Rounded TV Stand with Gold Trim and Diamond Panels", tvWhiteGoldRoundedDiamondConsole.url, "tv-stands", markUp(19000, 10), 19000, 4.5, ["new", "featured"]),
+  { ...make("tv-35", "White Rounded TV Stand with Gold Trim and Diamond Panels", tvWhiteGoldRoundedDiamondConsole, "tv-stands", markUp(19000, 10), 19000, 4.5, ["new", "featured"]),
     attributes: tvStandSpecs("190cm x 40cm x 55cm", "White with Gold Trim", "High gloss MDF board, rounded corners, diamond-textured doors, gold-toned legs and handles"), colors: ["#F8F6F1", "#C9A96E", "#E3DDD3"] },
-  { ...make("tv-36", "White Geometric TV Console with Open Media Shelf", tvWhiteGeometricOpenShelfConsole.url, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
+  { ...make("tv-36", "White Geometric TV Console with Open Media Shelf", tvWhiteGeometricOpenShelfConsole, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
     attributes: tvStandSpecs("200cm x 40cm x 55cm", "Matte White with Gold Inlay", "Painted MDF board, geometric cabinet fronts, full-width open shelf, stepped plinth base"), colors: ["#F5F3EE", "#C9A96E", "#D9D4CC"] },
-  { ...make("tv-37", "Oval White Fluted TV Stand with Gold Legs", tvWhiteFlutedOvalMediaConsole.url, "tv-stands", markUp(23000, 10), 23000, 5, ["new", "featured"]),
+  { ...make("tv-37", "Oval White Fluted TV Stand with Gold Legs", tvWhiteFlutedOvalMediaConsole, "tv-stands", markUp(23000, 10), 23000, 5, ["new", "featured"]),
     attributes: tvStandSpecs("210cm x 45cm x 60cm", "Soft White with Gold Trim", "Fluted MDF board, oval top profile, mixed drawer storage, gold metal legs and handles"), colors: ["#F6F4EF", "#C9A96E", "#E7E1D6"] },
-  { ...make("tv-38", "White Fluted TV Stand with Open Center and Gold Edge", tvWhiteFlutedOpenCenterConsole.url, "tv-stands", markUp(22000, 10), 22000, 4.5, ["new", "featured"]),
+  { ...make("tv-38", "White Fluted TV Stand with Open Center and Gold Edge", tvWhiteFlutedOpenCenterConsole, "tv-stands", markUp(22000, 10), 22000, 4.5, ["new", "featured"]),
     attributes: tvStandSpecs("200cm x 40cm x 55cm", "White with Gold Edge Detail", "Fluted MDF board, open center shelf, side cabinets, drawer storage, gold-tone metal legs"), colors: ["#F7F5F0", "#C9A96E", "#DFD9D0"] },
-  { ...make("tv-39", "White Diamond Pattern TV Stand with Gold Legs", tvWhiteGoldDiamondPatternConsole.url, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
+  { ...make("tv-39", "White Diamond Pattern TV Stand with Gold Legs", tvWhiteGoldDiamondPatternConsole, "tv-stands", markUp(17000, 10), 17000, 4.5, ["new"]),
     attributes: tvStandSpecs("200cm x 40cm x 55cm", "White with Gold Trim", "Painted MDF board, diamond-quilted cabinet fronts, open center niche, gold-toned feet and knobs"), colors: ["#F5F3EE", "#C9A96E", "#DCD5CB"] },
-  { ...make("tv-40", "White Curved TV Console with Gold Line Detail", tvWhiteWrappedGoldLineConsole.url, "tv-stands", markUp(20000, 10), 20000, 4.5, ["new", "featured"]),
+  { ...make("tv-40", "White Curved TV Console with Gold Line Detail", tvWhiteWrappedGoldLineConsole, "tv-stands", markUp(20000, 10), 20000, 4.5, ["new", "featured"]),
     attributes: tvStandSpecs("210cm x 42cm x 55cm", "Soft White with Gold Line Detail", "High gloss MDF board, curved fluted ends, center drawers, side display shelving, gold-tone metal legs"), colors: ["#F6F4EE", "#C9A96E", "#E5DED2"] },
 ];
 
@@ -772,33 +771,33 @@ const coffeeTableSpecs = (size: string, color: string, material: string) => [
 ];
 
 const coffeeTableProducts: Product[] = [
-  { ...make("ct-1", "Rectangular Black Glass Top Coffee Table with White Base and Drawer", ctBlackGlassWhiteBase.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
+  { ...make("ct-1", "Rectangular Black Glass Top Coffee Table with White Base and Drawer", ctBlackGlassWhiteBase, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
     attributes: coffeeTableSpecs("120cm x 60cm x 45cm", "White with Black Glass", "Tempered black glass top, high-gloss MDF base with drawer and side cabinet"), colors: ["#F5F3EE", "#0E0E0E", "#C0C0C0"] },
-  { ...make("ct-2", "White and Grey Coffee Table with Gold Marble Top", ctWhiteGreyMarbleDrawer.url, "coffee-tables", markUp(16000, 10), 16000, 4.5, ["new"]),
+  { ...make("ct-2", "White and Grey Coffee Table with Gold Marble Top", ctWhiteGreyMarbleDrawer, "coffee-tables", markUp(16000, 10), 16000, 4.5, ["new"]),
     attributes: coffeeTableSpecs("110cm x 55cm x 45cm", "White and Charcoal Grey with Marble", "Faux gold-vein marble top, MDF board frame, cabinet and drawer storage, gold knobs"), colors: ["#F4F1EA", "#4A4A4A", "#C9A96E"] },
-  { ...make("ct-3", "White and Gold Marble Tiered Coffee Table with Drawers", ctWhiteGoldMarbleTiered.url, "coffee-tables", markUp(16000, 10), 16000, 4.5, ["new", "featured"]),
+  { ...make("ct-3", "White and Gold Marble Tiered Coffee Table with Drawers", ctWhiteGoldMarbleTiered, "coffee-tables", markUp(16000, 10), 16000, 4.5, ["new", "featured"]),
     attributes: coffeeTableSpecs("120cm x 60cm x 50cm", "White with Gold Marble Top", "Faux marble top with gold trim, tiered MDF base, diamond-textured drawers"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
-  { ...make("ct-4", "Modern White High-Gloss Two-Tier Coffee Table", ctWhiteHighglossTwoTier.url, "coffee-tables", markUp(15000, 10), 15000, 4.5, ["new"]),
+  { ...make("ct-4", "Modern White High-Gloss Two-Tier Coffee Table", ctWhiteHighglossTwoTier, "coffee-tables", markUp(15000, 10), 15000, 4.5, ["new"]),
     attributes: coffeeTableSpecs("120cm x 65cm x 40cm", "Pure White High Gloss", "High-gloss lacquered MDF, floating two-tier design"), colors: ["#FFFFFF", "#F4F1EA", "#E7E1D6"] },
-  { ...make("ct-5", "White Minimalist Two-Tier Coffee Table with Open Shelf", ctWhiteMinimalistTwoTier.url, "coffee-tables", markUp(15000, 10), 15000, 4.5, ["new"]),
+  { ...make("ct-5", "White Minimalist Two-Tier Coffee Table with Open Shelf", ctWhiteMinimalistTwoTier, "coffee-tables", markUp(15000, 10), 15000, 4.5, ["new"]),
     attributes: coffeeTableSpecs("120cm x 60cm x 40cm", "Matte White", "Painted MDF board, two-tier staggered top with open lower shelf"), colors: ["#F7F5F0", "#EDE9E1", "#DDD8CF"] },
-  { ...make("ct-6", "White Coffee Table with Black Marble Top and Gold Trim", ctWhiteBlackMarbleGoldTrim.url, "coffee-tables", markUp(18000, 10), 18000, 5, ["top", "featured"], true),
+  { ...make("ct-6", "White Coffee Table with Black Marble Top and Gold Trim", ctWhiteBlackMarbleGoldTrim, "coffee-tables", markUp(18000, 10), 18000, 5, ["top", "featured"], true),
     attributes: coffeeTableSpecs("120cm x 60cm x 45cm", "White with Black Marble and Gold Accent", "Faux black marble top, high-gloss white MDF base, gold trim detail"), colors: ["#F5F3EE", "#0E0E0E", "#C9A96E"] },
-  { ...make("ct-7", "White and Gold Marble Coffee Table with Gold Drawer", ctWhiteGoldMarbleDrawer.url, "coffee-tables", markUp(18000, 10), 18000, 5, ["new", "featured"]),
+  { ...make("ct-7", "White and Gold Marble Coffee Table with Gold Drawer", ctWhiteGoldMarbleDrawer, "coffee-tables", markUp(18000, 10), 18000, 5, ["new", "featured"]),
     attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Gold Marble Top", "Faux gold-vein marble top with rounded corners, MDF frame, gold drawer front"), colors: ["#F6F3ED", "#C9A96E", "#EDE3D2"] },
-  { ...make("ct-8", "White and Gold Marble Coffee Table with Wrapped Gold Bands", ctWhiteGoldMarbleWrapped.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
+  { ...make("ct-8", "White and Gold Marble Coffee Table with Wrapped Gold Bands", ctWhiteGoldMarbleWrapped, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new", "featured"]),
     attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Gold Marble Top", "Faux gold-vein marble top, curved MDF body with gold band inlays, twin drawers with gold pulls"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
-  { ...make("ct-9", "Oval Gold Marble Top Coffee Table with Fluted White Base and Gold Legs", ctOvalGoldMarbleFluted.url, "coffee-tables", markUp(20000, 10), 20000, 5, ["new", "featured"], true),
+  { ...make("ct-9", "Oval Gold Marble Top Coffee Table with Fluted White Base and Gold Legs", ctOvalGoldMarbleFluted, "coffee-tables", markUp(20000, 10), 20000, 5, ["new", "featured"], true),
     attributes: coffeeTableSpecs("130cm x 70cm x 45cm", "White with Golden Marble Top", "Polished golden-vein marble top, fluted high-gloss MDF body with twin drawers, gold metal legs"), colors: ["#F5F2EB", "#C9A96E", "#EDE3D2"] },
-  { ...make("ct-10", "Modern White Coffee Table with Black Glass Top and Palm Motif", ctWhiteBlackGlassPalmMotif.url, "coffee-tables", markUp(18000, 10), 18000, 4.5, ["new"]),
+  { ...make("ct-10", "Modern White Coffee Table with Black Glass Top and Palm Motif", ctWhiteBlackGlassPalmMotif, "coffee-tables", markUp(18000, 10), 18000, 4.5, ["new"]),
     attributes: coffeeTableSpecs("120cm x 65cm x 45cm", "White with Black Glass Top", "Tempered black glass top with palm motif, high-gloss curved MDF body, twin drawers with chrome handles"), colors: ["#F5F3EE", "#0E0E0E", "#B8B8B8"] },
-  { ...make("ct-11", "Square White Marble Top Coffee Table with Gold Stripe Base", ctSquareWhiteMarbleGoldStripes.url, "coffee-tables", markUp(22000, 10), 22000, 5, ["top", "featured"], true),
+  { ...make("ct-11", "Square White Marble Top Coffee Table with Gold Stripe Base", ctSquareWhiteMarbleGoldStripes, "coffee-tables", markUp(22000, 10), 22000, 5, ["top", "featured"], true),
     attributes: coffeeTableSpecs("90cm x 90cm x 40cm", "White Marble with Gold Accents", "White marble top with grey veining, high-gloss MDF base with gold vertical stripe inlays, gold feet"), colors: ["#F5F3EE", "#C9A96E", "#DDD8CF"] },
-  { ...make("ct-12", "Long White Coffee Table with Black Glass Top and Arched Base", ctLongWhiteBlackGlassArch.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new"]),
+  { ...make("ct-12", "Long White Coffee Table with Black Glass Top and Arched Base", ctLongWhiteBlackGlassArch, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new"]),
     attributes: coffeeTableSpecs("140cm x 60cm x 45cm", "White with Black Glass Top", "Tempered black glass top, high-gloss white MDF base with sculpted arched cutouts and open lower shelf"), colors: ["#F5F3EE", "#0E0E0E", "#EDE9E1"] },
-  { ...make("ct-13", "White Curved Coffee Table with Storage Drawer and Dark Accent", ctWhiteCurvedStorageDrawer.url, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new"]),
+  { ...make("ct-13", "White Curved Coffee Table with Storage Drawer and Dark Accent", ctWhiteCurvedStorageDrawer, "coffee-tables", markUp(17000, 10), 17000, 4.5, ["new"]),
     attributes: coffeeTableSpecs("130cm x 65cm x 45cm", "White with Dark Walnut Accent", "High-gloss curved MDF body, pull-out storage drawer, dark walnut inlay strip"), colors: ["#F5F3EE", "#3A2A1E", "#EDE9E1"] },
-  { ...make("ct-14", "Black Glass Top Coffee Table with White Dual-Tier Cabinet and Drawer", ctBlackGlassWhiteDualTierCabinet.url, "coffee-tables", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
+  { ...make("ct-14", "Black Glass Top Coffee Table with White Dual-Tier Cabinet and Drawer", ctBlackGlassWhiteDualTierCabinet, "coffee-tables", markUp(18000, 10), 18000, 4.5, ["new", "featured"]),
     attributes: coffeeTableSpecs("135cm x 70cm x 45cm", "White with Black Glass Top", "Tempered black glass top, high-gloss MDF frame with side cabinet, open shelving and lower drawer"), colors: ["#F5F3EE", "#0E0E0E", "#8A8A8A"] },
 ];
 
