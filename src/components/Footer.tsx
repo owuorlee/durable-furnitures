@@ -49,7 +49,16 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <p className="text-cta mb-4 text-xs text-ivory/80">Get in Touch</p>
-            <p className="mb-3 font-body text-sm text-ivory/50">Nairobi, Kenya</p>
+            <p className="mb-3 font-body text-sm text-ivory/50">
+              <a
+                href="https://maps.app.goo.gl/C2M2mPkqpSLiV5gc7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-gold"
+              >
+                Ruiru Bypass, behind Mark Hotel — Ruiru, Kiambu
+              </a>
+            </p>
             <div className="mb-4 flex items-center gap-2 text-ivory/50">
               <MessageCircle className="h-4 w-4" />
               <span className="font-body text-sm">+254 741 530 539</span>

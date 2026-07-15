@@ -8,7 +8,8 @@ steps only a human with account access can do, in priority order, and (3) the
 ongoing maintenance routine. Keep the NAP (Name, Address, Phone) identical
 everywhere it appears on the internet:
 
-> **Durable Furniture House** · Nairobi, Kenya · **+254 741 530 539**
+> **Durable Furniture House** · Ruiru Bypass, behind Mark Hotel, Ruiru, Kiambu County · **+254 741 530 539**
+> Google Maps: https://maps.app.goo.gl/C2M2mPkqpSLiV5gc7 (listing name on Maps: "Durable furnitures")
 
 ---
 
@@ -74,23 +75,24 @@ Until then this costs you nothing on Google rankings.
 **Expectation:** pages start appearing in Google within days; meaningful
 impressions data within 2–4 weeks.
 
-### B. Google Business Profile (biggest local-SEO lever — 30 minutes)
+### B. Google Business Profile — ALREADY EXISTS, needs alignment
 
-For "furniture shop near me" and Google Maps results, nothing beats this.
+The client already has a live listing ("Durable furnitures", Ruiru — with
+location, reviews and images): https://maps.app.goo.gl/C2M2mPkqpSLiV5gc7
 
-1. Go to https://business.google.com → Add business →
-   name: **Durable Furniture House**.
-2. Category: **Furniture store** (add "Furniture maker" as secondary).
-3. If customers visit a showroom/workshop: enter the street address and verify
-   (Google posts a card or offers video verification in Kenya). If delivery
-   only: choose "service area business" and set Nairobi + Kiambu as the areas.
-4. Phone: +254 741 530 539 · Website: https://www.durablefurnitures.co.ke
-   · Hours: Mon–Sun 08:00–18:00 (must match the site).
-5. Upload 15–20 real product/workshop photos (the same client photos on the
-   site). Add products with prices to the profile's product section.
-6. **Reviews are the ranking fuel:** after every delivery, WhatsApp the
-   customer the review link Google gives you ("Share review form"). Aim for
-   2–4 reviews per month, and reply to every one.
+Alignment checklist (mismatches weaken the local ranking signal):
+
+1. **Business name**: listing says "Durable furnitures"; site says
+   "Durable Furniture House". Ask the client to align the listing name with
+   the brand (or vice versa) — Google cross-references them.
+2. **Website field**: must point to https://www.durablefurnitures.co.ke
+3. **Phone**: must be +254 741 530 539, same as the site.
+4. **Hours**: Mon–Sun 08:00–18:00 (must match the site header/schema).
+5. **Category**: "Furniture store" primary, "Furniture maker" secondary.
+6. Add products with prices to the profile's product section.
+7. **Reviews are the ranking fuel:** after every delivery, WhatsApp the
+   customer the review link ("Share review form"). Aim for 2–4 reviews per
+   month, and reply to every one.
 
 ### C. Bing Webmaster Tools (5 minutes)
 

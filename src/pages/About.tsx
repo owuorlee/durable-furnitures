@@ -141,7 +141,16 @@ const About = () => {
             <div className="border border-border bg-muted/30 p-6">
               <MapPin className="mx-auto h-5 w-5 text-gold" strokeWidth={1.5} />
               <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Address</p>
-              <p className="mt-1 font-body text-sm text-foreground">Nairobi, Kenya</p>
+              <p className="mt-1 font-body text-sm text-foreground">Ruiru Bypass, behind Mark Hotel</p>
+              <p className="font-body text-xs text-muted-foreground">Ruiru, Kiambu County</p>
+              <a
+                href="https://maps.app.goo.gl/C2M2mPkqpSLiV5gc7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block font-body text-xs text-gold underline underline-offset-2 transition-colors hover:text-foreground"
+              >
+                Get Directions
+              </a>
             </div>
           </div>
 

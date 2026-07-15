@@ -40,9 +40,12 @@ export const localBusinessSchema = () => ({
   paymentAccepted: "Cash, M-Pesa, Payment on Delivery",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Nairobi",
+    streetAddress: "Ruiru Bypass, behind Mark Hotel",
+    addressLocality: "Ruiru",
+    addressRegion: "Kiambu County",
     addressCountry: "KE",
   },
+  hasMap: "https://maps.app.goo.gl/C2M2mPkqpSLiV5gc7",
   areaServed: [
     { "@type": "City", name: "Nairobi" },
     { "@type": "City", name: "Kiambu" },
