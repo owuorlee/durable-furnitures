@@ -41,7 +41,7 @@ const PopularCategories = () => {
                   <div className="relative aspect-square overflow-hidden bg-muted">
                     <img
                       src={cat.image}
-                      alt={cat.name}
+                      alt={`${cat.name} for sale in Nairobi, Kenya — Durable Furniture House`}
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />

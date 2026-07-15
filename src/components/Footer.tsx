@@ -11,9 +11,9 @@ const Footer = () => {
             <div className="mb-3 flex items-center gap-3">
               <BrandMark className="h-9 w-9 text-ivory" />
               <div>
-                <h3 className="font-display text-lg font-light tracking-[0.15em] text-ivory">
+                <p className="font-display text-lg font-light tracking-[0.15em] text-ivory">
                   DURABLE
-                </h3>
+                </p>
                 <p className="text-[10px] uppercase tracking-[0.25em] text-ivory/60">
                   Furniture House
                 </p>
@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="text-cta mb-4 text-xs text-ivory/80">Quick Links</h4>
+            <p className="text-cta mb-4 text-xs text-ivory/80">Quick Links</p>
             <ul className="space-y-2 font-body text-sm text-ivory/50">
               <li><a href="#categories" className="transition-colors hover:text-gold">Collections</a></li>
               <li><a href="/about" className="transition-colors hover:text-gold">About Us</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
 
           {/* Payment */}
           <div>
-            <h4 className="text-cta mb-4 text-xs text-ivory/80">Payment Methods</h4>
+            <p className="text-cta mb-4 text-xs text-ivory/80">Payment Methods</p>
             <div className="flex gap-4 font-body text-xs text-ivory/50">
               <span className="rounded border border-ivory/20 px-3 py-1.5">M-Pesa</span>
               <span className="rounded border border-ivory/20 px-3 py-1.5">Visa</span>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-cta mb-4 text-xs text-ivory/80">Get in Touch</h4>
+            <p className="text-cta mb-4 text-xs text-ivory/80">Get in Touch</p>
             <p className="mb-3 font-body text-sm text-ivory/50">Nairobi, Kenya</p>
             <div className="mb-4 flex items-center gap-2 text-ivory/50">
               <MessageCircle className="h-4 w-4" />

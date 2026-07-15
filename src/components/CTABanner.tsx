@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { PHONE_WA } from "@/lib/seo";
 
 const CTABanner = () => {
   const ref = useRef(null);
@@ -24,7 +25,9 @@ const CTABanner = () => {
             Browse the Collection
           </a>
           <a
-            href="#"
+            href={`https://wa.me/${PHONE_WA}?text=${encodeURIComponent("Hello Durable Furniture House, I would like to book a free furniture consultation.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-cta bg-gold px-8 py-3.5 text-xs text-obsidian transition-all duration-500 hover:bg-gold/80"
           >
             Book a Free Consultation

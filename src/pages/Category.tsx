@@ -14,6 +14,8 @@ import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { StarRating } from "@/components/shop/StarRating";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, categoryItemListSchema } from "@/lib/seo";
 
 type Density = 2 | 3 | 4;
 type Sort = "default" | "price-asc" | "price-desc" | "newest" | "rating";
@@ -167,6 +169,16 @@ const Category = () => {
 
   return (
     <main className="min-h-screen">
+      <Seo
+        title={`${category.name} in Nairobi, Kenya | Durable Furniture House`}
+        description={category.metaDescription}
+        path={`/category/${category.slug}`}
+        image={category.image}
+        jsonLd={[
+          breadcrumbSchema([...crumbs.slice(0, 2), { label: category.name, to: `/category/${category.slug}` }]),
+          categoryItemListSchema(category, all),
+        ]}
+      />
       <UtilityBar />
       <MainHeader />
       <CategoryNav />
@@ -177,6 +189,9 @@ const Category = () => {
           <h1 className="mt-4 font-display text-3xl font-light tracking-wide text-foreground md:text-4xl">
             {category.name}
           </h1>
+          <p className="mt-3 max-w-3xl font-body text-sm leading-relaxed text-muted-foreground">
+            {category.intro}
+          </p>
           <p className="mt-2 font-body text-sm text-muted-foreground">{filtered.length} products found</p>
         </div>
       </section>

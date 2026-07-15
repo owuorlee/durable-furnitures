@@ -7,6 +7,7 @@ import heroBedroom from "@/assets/hero-bedroom-emerald.jpg";
 
 type Slide = {
   image: string;
+  alt: string;
   eyebrow: string;
   titleTop: string;
   titleBottom: string;
@@ -18,6 +19,7 @@ type Slide = {
 const slides: Slide[] = [
   {
     image: heroImage,
+    alt: "Luxury living room furniture in Nairobi — new season collection by Durable Furniture House",
     eyebrow: "✦ New Season Collection",
     titleTop: "Elevate",
     titleBottom: "Your Space",
@@ -31,6 +33,7 @@ const slides: Slide[] = [
   },
   {
     image: heroLounge,
+    alt: "Bespoke sofa set in a golden-lit Nairobi lounge — handmade by Durable Furniture House",
     eyebrow: "✦ The Living Room, Reimagined",
     titleTop: "Where Comfort",
     titleBottom: "Meets Craft",
@@ -44,6 +47,7 @@ const slides: Slide[] = [
   },
   {
     image: heroBedroom,
+    alt: "Emerald chester bed and bedroom furniture made in Kenya — Durable Furniture House signature series",
     eyebrow: "✦ Signature Bedroom Series",
     titleTop: "Wake Up in",
     titleBottom: "Quiet Luxury",
@@ -90,7 +94,8 @@ const PromoHero = () => {
         >
           <img
             src={slide.image}
-            alt="Curated luxury furniture lifestyle by Durable"
+            alt={slide.alt}
+            {...(index === 0 ? ({ fetchpriority: "high" } as Record<string, string>) : { loading: "lazy" as const })}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-obsidian/70 via-obsidian/40 to-transparent" />
@@ -109,7 +114,7 @@ const PromoHero = () => {
               {slide.eyebrow}
             </motion.p>
 
-            <motion.h2
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -118,7 +123,7 @@ const PromoHero = () => {
               {slide.titleTop}
               <br />
               <span className="italic text-gold">{slide.titleBottom}</span>
-            </motion.h2>
+            </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}

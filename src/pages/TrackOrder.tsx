@@ -6,6 +6,8 @@ import MainHeader from "@/components/MainHeader";
 import CategoryNav from "@/components/CategoryNav";
 import Footer from "@/components/Footer";
 import { Order, ORDER_STAGES, orders as staticOrders } from "@/data/orders";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema } from "@/lib/seo";
 
 const PHONE_WA = "254741530539";
 
@@ -52,6 +54,12 @@ const TrackOrder = () => {
 
   return (
     <main className="min-h-screen">
+      <Seo
+        title="Track Your Order | Durable Furniture House Nairobi"
+        description="Track your Durable Furniture House order in real time. Enter your Order ID to see delivery progress for furniture orders across Nairobi & Kiambu, Kenya."
+        path="/track-order"
+        jsonLd={[breadcrumbSchema([{ label: "Home", to: "/" }, { label: "Track Order", to: "/track-order" }])]}
+      />
       <UtilityBar />
       <MainHeader />
       <CategoryNav />

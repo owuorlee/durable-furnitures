@@ -229,17 +229,93 @@ export type Category = {
   name: string;
   image: string;
   parent?: string;
+  /** On-page introductory paragraph shown at the top of the category page. */
+  intro: string;
+  /** ~155-character meta description used in the page <head>. */
+  metaDescription: string;
 };
 
 export const categories: Category[] = [
-  { slug: "l-shaped-sofas", name: "L-Shaped Sofa Sets", image: lsOlive, parent: "sofas" },
-  { slug: "sofa-set-designs", name: "Sofa Set Designs", image: ssCreamStuddedShowroom, parent: "sofas" },
-  { slug: "chester-seats", name: "Chester Seats", image: csCreamChannelSet, parent: "sofas" },
-  { slug: "chester-beds", name: "Chester Beds", image: cbDarkGreyPillowtop, parent: "bedroom" },
-  { slug: "wooden-beds", name: "Wooden Beds", image: wbGreyPanelled, parent: "bedroom" },
-  { slug: "coffee-tables", name: "Coffee Tables", image: ctBlackGlassWhiteDualTierCabinet, parent: "living-room" },
-  { slug: "tv-stands", name: "TV Stands", image: tvWhiteGeometricGoldHandle2Drawer, parent: "living-room" },
-  { slug: "dining-sets", name: "Dining Sets", image: dtWhiteOvalFluted, parent: "dining" },
+  {
+    slug: "l-shaped-sofas",
+    name: "L-Shaped Sofa Sets",
+    image: lsOlive,
+    parent: "sofas",
+    intro:
+      "Shop L-shaped sofas in Nairobi, handcrafted in Kenya from kiln-dried hardwood and premium fabric. From cosy 6-seaters to grand 8-seater corner sofas in velvet, chenille and corduroy, every L-seat sofa is built for real Kenyan living rooms — with free delivery across Nairobi & Kiambu and payment on delivery.",
+    metaDescription:
+      "L-shaped sofas for sale in Nairobi from KSh 43,000. 6, 7 & 8 seater corner sofas handmade in Kenya. Free delivery in Nairobi & Kiambu, pay on delivery.",
+  },
+  {
+    slug: "sofa-set-designs",
+    name: "Sofa Set Designs",
+    image: ssCreamStuddedShowroom,
+    parent: "sofas",
+    intro:
+      "Browse the latest sofa set designs in Kenya — 3-seater, 5-seater and full 7-seater living room sets upholstered in quality fabrics with kiln-dried hardwood frames. Each set is handmade in our Nairobi workshop and delivered free within Nairobi & Kiambu, with payment on delivery for total peace of mind.",
+    metaDescription:
+      "Modern sofa set designs in Kenya from KSh 45,000. 3, 5 & 7 seater sets handcrafted in Nairobi. Free delivery in Nairobi & Kiambu, payment on delivery.",
+  },
+  {
+    slug: "chester-seats",
+    name: "Chester Seats",
+    image: csCreamChannelSet,
+    parent: "sofas",
+    intro:
+      "Classic chesterfield sofas and chester seats for sale in Nairobi — deep-buttoned wingback chairs, tufted 2-seaters and full 5, 6 and 7-seater chesterfield sets in velvet and premium fabric. Handcrafted in Kenya with free delivery across Nairobi & Kiambu and payment on delivery.",
+    metaDescription:
+      "Chesterfield sofas & chester seats in Nairobi, Kenya. Tufted wingback chairs and 5–7 seater sets, handmade locally. Free delivery, pay on delivery.",
+  },
+  {
+    slug: "chester-beds",
+    name: "Chester Beds",
+    image: cbDarkGreyPillowtop,
+    parent: "bedroom",
+    intro:
+      "Turn your bedroom into a sanctuary with chester beds made in Kenya — deep-tufted and channel-stitched upholstered beds in 4x6, 5x6 and 6x6 sizes, with matching nightstands available. Every bed is handmade in Nairobi and delivered free within Nairobi & Kiambu, payment on delivery.",
+    metaDescription:
+      "Chester beds for sale in Kenya — tufted upholstered beds in 4x6, 5x6 & 6x6 sizes, handmade in Nairobi. Free delivery in Nairobi & Kiambu, pay on delivery.",
+  },
+  {
+    slug: "wooden-beds",
+    name: "Wooden Beds",
+    image: wbGreyPanelled,
+    parent: "bedroom",
+    intro:
+      "Solid wooden beds for sale in Kenya, crafted from seasoned mahogany and hardwood in 4x6, 5x6 and 6x6 sizes. From carved statement frames to clean panelled designs, each bed is built in our Nairobi workshop to last generations — free delivery within Nairobi & Kiambu, payment on delivery.",
+    metaDescription:
+      "Solid wooden beds for sale in Kenya — mahogany & hardwood frames in 4x6, 5x6 & 6x6 sizes, made in Nairobi. Free delivery Nairobi & Kiambu, pay on delivery.",
+  },
+  {
+    slug: "coffee-tables",
+    name: "Coffee Tables",
+    image: ctBlackGlassWhiteDualTierCabinet,
+    parent: "living-room",
+    intro:
+      "Modern coffee tables for sale in Nairobi — marble-top, tempered-glass and high-gloss designs with storage drawers and gold accents to finish your living room. Prices start from KSh 15,000 with free delivery across Nairobi & Kiambu and payment on delivery.",
+    metaDescription:
+      "Modern coffee tables for sale in Nairobi from KSh 15,000 — marble top, glass & high-gloss designs. Free delivery in Nairobi & Kiambu, pay on delivery.",
+  },
+  {
+    slug: "tv-stands",
+    name: "TV Stands",
+    image: tvWhiteGeometricGoldHandle2Drawer,
+    parent: "living-room",
+    intro:
+      "Shop modern TV stands in Kenya — fluted, geometric and diamond-panel TV consoles with gold accents, storage drawers and open media shelves, sized for TVs up to 75 inches. From KSh 17,000 with free delivery across Nairobi & Kiambu and payment on delivery.",
+    metaDescription:
+      "Modern TV stands for sale in Kenya from KSh 17,000 — fluted & gold-accent TV consoles made in Nairobi. Free delivery in Nairobi & Kiambu, pay on delivery.",
+  },
+  {
+    slug: "dining-sets",
+    name: "Dining Sets",
+    image: dtWhiteOvalFluted,
+    parent: "dining",
+    intro:
+      "Bring the family together with dining table sets made in Kenya — solid mahogany 4, 6 and 8-seater dining sets with cushioned, tufted and ladder-back chairs in timeless finishes. Handcrafted in Nairobi with free delivery across Nairobi & Kiambu and payment on delivery.",
+    metaDescription:
+      "Dining table sets in Kenya — solid mahogany 4, 6 & 8 seater dining sets handmade in Nairobi. Free delivery in Nairobi & Kiambu, payment on delivery.",
+  },
 ];
 
 export const parentCategories: Record<string, string> = {

@@ -43,9 +43,10 @@ const MainHeader = () => {
         <Link to="/" className="flex flex-shrink-0 items-center gap-3">
           <BrandMark className="h-10 w-10 text-gold" />
           <div>
-            <h1 className="font-display text-2xl font-light tracking-[0.15em] text-foreground">
+            {/* Deliberately not an <h1>: each page supplies its own single H1. */}
+            <p className="font-display text-2xl font-light tracking-[0.15em] text-foreground">
               DURABLE
-            </h1>
+            </p>
             <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
               Furniture House
             </p>

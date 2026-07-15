@@ -14,6 +14,8 @@ import { getProduct, products, formatKsh, Product } from "@/data/products";
 import { useShop } from "@/context/ShopContext";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, productSchema } from "@/lib/seo";
 
 const PHONE_WA = "254741530539";
 
@@ -62,6 +64,7 @@ const ProductPage = () => {
   if (!product) {
     return (
       <main className="min-h-screen">
+        <Seo title="Product Not Found | Durable Furniture House" description="This product is no longer available." path="/" noindex />
         <UtilityBar />
         <MainHeader />
         <CategoryNav />
@@ -110,6 +113,14 @@ const ProductPage = () => {
 
   return (
     <main className="min-h-screen">
+      <Seo
+        title={`${product.name} | Durable Furniture House`}
+        description={`Buy the ${product.name} in Nairobi, Kenya for ${formatKsh(product.sale)} (was ${formatKsh(product.original)}). Free delivery within Nairobi & Kiambu, payment on delivery.`}
+        path={`/product/${product.slug}`}
+        image={product.image}
+        type="product"
+        jsonLd={[productSchema(product), breadcrumbSchema(crumbs)]}
+      />
       <UtilityBar />
       <MainHeader />
       <CategoryNav />

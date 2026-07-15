@@ -5,6 +5,8 @@ import MainHeader from "@/components/MainHeader";
 import CategoryNav from "@/components/CategoryNav";
 import Footer from "@/components/Footer";
 import aboutHero from "@/assets/about-hero.jpg";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, localBusinessSchema } from "@/lib/seo";
 
 const PHONE_DISPLAY = "+254 741 530 539";
 const PHONE_TEL = "+254741530539";
@@ -20,6 +22,15 @@ const values = [
 const About = () => {
   return (
     <main className="min-h-screen">
+      <Seo
+        title="About Us | Durable Furniture House – Furniture Makers in Nairobi"
+        description="Durable Furniture House is a Kenyan furniture workshop crafting bespoke sofas, beds and dining sets in Nairobi. Free delivery in Nairobi & Kiambu, payment on delivery."
+        path="/about"
+        jsonLd={[
+          localBusinessSchema(),
+          breadcrumbSchema([{ label: "Home", to: "/" }, { label: "About Us", to: "/about" }]),
+        ]}
+      />
       <UtilityBar />
       <MainHeader />
       <CategoryNav />

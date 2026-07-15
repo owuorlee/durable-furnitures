@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import { StarRating } from "@/components/shop/StarRating";
 import { products, formatKsh, Product } from "@/data/products";
 import { useShop, COMPARE_LIMIT } from "@/context/ShopContext";
+import Seo from "@/components/Seo";
 
 const Compare = () => {
   const { compare, toggleCompare, clearCompare, addToCart } = useShop();
@@ -35,6 +36,12 @@ const Compare = () => {
 
   return (
     <main className="min-h-screen">
+      <Seo
+        title="Compare Products | Durable Furniture House"
+        description="Compare furniture side by side at Durable Furniture House."
+        path="/compare"
+        noindex
+      />
       <UtilityBar />
       <MainHeader />
       <CategoryNav />

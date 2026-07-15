@@ -11,6 +11,7 @@ import ProductCard from "@/components/shop/ProductCard";
 import QuickViewModal from "@/components/shop/QuickViewModal";
 import { products, Product } from "@/data/products";
 import { useShop } from "@/context/ShopContext";
+import Seo from "@/components/Seo";
 
 const Wishlist = () => {
   const { wishlist, toggleWishlist } = useShop();
@@ -23,6 +24,12 @@ const Wishlist = () => {
 
   return (
     <main className="min-h-screen">
+      <Seo
+        title="My Wishlist | Durable Furniture House"
+        description="Products you have saved for later at Durable Furniture House."
+        path="/wishlist"
+        noindex
+      />
       <UtilityBar />
       <MainHeader />
       <CategoryNav />
